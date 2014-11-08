@@ -104,3 +104,10 @@ h1:hover {
 	float: right;
 	margin-top: -45px;
 }
+#d {
+    margin-top: 15%;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+}
