@@ -15,10 +15,32 @@ h1 {
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 75px;
+	cursor: default;
 }
 h1:hover {
 	color: #e3e3e3;
 }
+
+#jam {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial;
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}
+
+#jam a {
+    color: #fdff49;
+    font-weight: bold;
+}
+
+#jam a:hover {
+    color: #f1bc2a;
+}
+
 #social {
 	text-align: center;
 }
@@ -42,6 +64,12 @@ h1:hover {
 }
 #twtr:hover {
 	color: #a6cbf2;
+}
+#lsfm {
+	color: #df1616;
+}
+#lsfm:hover {
+	color: #f24a4a;
 }
 #projects li {
 	width: 60%;
@@ -104,9 +132,11 @@ h1:hover {
 	float: right;
 	margin-top: -45px;
 }
-#d {
+.bot {
     margin-top: 15%;
     text-align: center;
+}
+#d {
     color: #FFFFFF;
     font-family: Arial;
     font-size: 12px;
