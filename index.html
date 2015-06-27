@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Max Krieger</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
-  <meta name=viewport content='width=550'>
-	<meta name="theme-color" content="#0d0f38">
-	<link rel="icon" sizes="256x256" href="highres.png">
-</head>
-<body>
-	<h1>Max Krieger</h1>
-	<ul id="social">
-		<a href="https://twitter.com/a9_io"><li id="twtr">twitter</li></a>
-		<a href="https://github.com/a9io"><li id="gthb">github</li></a>
-		<a href="http://www.last.fm/user/a9_io"><li id="lsfm">last.fm</li></a>
-	</ul>
-	<ul id="projects">
-		<a href="https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn">
-		<li id="tbmstr">
-			<div class="h">
-				Tabmaster
-			</div>
-			<div class="sub">
-				Tame your tabs.
-			</div>
-			<img id="tmbtn" src="tmbtn.png" width="80px" height="80px">
-			<img id="tm" src="tm.png" width="80px" height="80px">
-		</li>
-		</a>
-		<a href="/Steam-Emoticon-Art-Editor/">
-		<li id="seae">
-			<div class="h">
-				seae
-			</div>
-			<div class="sub">
-				The steam emoticon art editor.
-			</div>
-			<img id="balloon" src="http://cdn.steamcommunity.com/economy/emoticon/balloon" width="65px" height="65px">
-		</li>
-		</a>
-	</ul>
-	<div class="bot">
-	<div id="jam">
-    	<script src="http://www.thisismyjam.com/includes/js/medallion.js"></script>
-<script>Jam.Medallion.insert({"username":"a9","image":false});</script>
-    </div>
-	<div id="d"><span style="color: #CABA09; font-weight: bold">&#208;: </span>DAfuujjA14D3TUZwVamviRdnNNBpj4cVWy</div>
-	</div>
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-56010603-1', 'auto');
-  ga('send', 'pageview');
+	<head>
+		<title>Max Krieger</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+		<meta name=viewport content='width=550'>
+		<meta name="theme-color" content="#0d0f38">
+		<link rel="icon" sizes="256x256" href="highres.png">
+	</head>
 
-</script>
-</body>
+	<body>
+		<h1>Max Krieger</h1>
+		<ul id="social">
+			<a href="https://twitter.com/a9_io">
+				<li id="twtr">twitter</li>
+			</a>
+			<a href="https://github.com/a9io">
+				<li id="gthb">github</li>
+			</a>
+			<a href="http://www.last.fm/user/a9_io">
+				<li id="lsfm">last.fm</li>
+			</a>
+		</ul>
+		<ul id="projects">
+			<a href="https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn">
+				<li id="tbmstr">
+					<div class="h">
+						Tabmaster
+					</div>
+					<div class="sub">
+						Tame your tabs.
+					</div>
+					<img id="tmbtn" src="tmbtn.png" width="80px" height="80px">
+					<img id="tm" src="tm.png" width="80px" height="80px">
+				</li>
+			</a>
+			<a href="/Steam-Emoticon-Art-Editor/">
+				<li id="seae">
+					<div class="h">
+						seae
+					</div>
+					<div class="sub">
+						The steam emoticon art editor.
+					</div>
+					<img id="balloon" src="http://cdn.steamcommunity.com/economy/emoticon/balloon" width="65px" height="65px">
+				</li>
+			</a>
+		</ul>
+		<div class="bot">
+			<div id="jam">
+				<script src="http://www.thisismyjam.com/includes/js/medallion.js"></script>
+				<script>
+					Jam.Medallion.insert({
+						"username": "a9",
+						"image": false
+					});
+				</script>
+			</div>
+			<div id="d">
+				<span style="color: #CABA09; font-weight: bold">&#208;: </span>
+				<span id="address">DAfuujjA14D3TUZwVamviRdnNNBpj4cVWy</span>
+			</div>
+		</div>
+		<script>
+			//max's dogecoin address autoselector
+			var address = document.getElementById("address");
+			address.onclick = function() {
+				var txt = document.createElement("input");
+				txt.type = "text";
+				txt.value = address.innerHTML;
+				txt.style.width = "250px";
+				address.parentNode.replaceChild(txt, address);
+        txt.select();
+			};
+		</script>
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-56010603-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
+
 </html>
