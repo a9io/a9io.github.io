@@ -5,6 +5,7 @@
 body {
 	background: #000013;
 	font-family: 'Roboto', sans-serif;
+	min-width: 700px;
 }
 a {
 	text-decoration: none;
