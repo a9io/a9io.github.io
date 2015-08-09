@@ -69,10 +69,6 @@ h1:hover {
 	background-color: #ffffff;
 	color: #393939;
 }
-#seae {
-	background-color: #021859;
-	color: #f2f2f2;
-}
 #alienbox {
 	background-color: #CEE3F8;
 	color: #FF6600;
@@ -105,9 +101,6 @@ h1:hover {
 	margin-top: -35px;
 	margin-right: 8px;
 }
-#balloon {
-	margin-top: -55px;
-}
 #polyhex {
 	margin-top: -65px;
 }
@@ -116,18 +109,4 @@ h1:hover {
 	font-size: 14px;
 	text-align: center;
 	color: #FFFFFF;
-}
-#jam {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-	text-decoration: none;
-	color: #FFFFFF;
-}
-#jam a {
-	color: #fdff49;
-	font-weight: bold;
-}
-#jam a:hover {
-	color: #f1bc2a;
 }
