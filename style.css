@@ -104,12 +104,12 @@ h1:hover {
 #polyhex {
 	margin-top: -65px;
 }
-.bot {
+#bot {
 	margin-top: 3%;
 	font-size: 14px;
 	text-align: center;
 	color: #FFFFFF;
 }
-bot.su {
+#bot.su {
 	margin: 20px;
 }
