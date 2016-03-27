@@ -43,11 +43,11 @@ export default class extends Component {
           <div className="col-sm-6 col-xs-12">
             <p>alienbox is a menubar app for checking your reddit inbox.</p>
             <p>it was built from the ground up with Electron, VueJS, and the Reddit API.</p>
-            <a href="/alienbox">
+            <div className="row center-xs">
               <div className="visitButton" style={{backgroundColor: '#FF6600'}}>
               Check it out!
               </div>
-            </a>
+            </div>
           </div>
           <div className="col-sm-6 col-xs-12">
             <div className="row center-xs">
@@ -60,11 +60,13 @@ export default class extends Component {
         <Modal show={(this.state.show === 'Tabmaster')} back={() => this.hideProject()} title="Tabmaster">
           <div className="col-sm-6 col-xs-12">
             <p>Tabmaster is a chrome extension allowing for easier management of stray tabs.</p>
-            <a href="https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn">
-              <div className="visitButton" style={{backgroundColor: '#03B941'}}>
-              Check it out!
-              </div>
-            </a>
+            <div className="row center-xs">
+              <a href="https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn">
+                <div className="visitButton" style={{backgroundColor: '#03B941'}}>
+                  Check it out!
+                </div>
+              </a>
+            </div>
           </div>
           <div className="col-sm-6 col-xs-12">
             <div className="row center-xs">
