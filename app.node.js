@@ -1330,8 +1330,8 @@ module.exports =
                 'it was built from the ground up with Electron, VueJS, and the Reddit API.'
               ),
               _react2['default'].createElement(
-                'a',
-                { href: '/alienbox' },
+                'div',
+                { className: 'row center-xs' },
                 _react2['default'].createElement(
                   'div',
                   { className: 'visitButton', style: { backgroundColor: '#FF6600' } },
@@ -1367,12 +1367,16 @@ module.exports =
                 'Tabmaster is a chrome extension allowing for easier management of stray tabs.'
               ),
               _react2['default'].createElement(
-                'a',
-                { href: 'https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn' },
+                'div',
+                { className: 'row center-xs' },
                 _react2['default'].createElement(
-                  'div',
-                  { className: 'visitButton', style: { backgroundColor: '#03B941' } },
-                  'Check it out!'
+                  'a',
+                  { href: 'https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'visitButton', style: { backgroundColor: '#03B941' } },
+                    'Check it out!'
+                  )
                 )
               )
             ),
@@ -1465,7 +1469,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\tmin-height: 100%;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.5em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\twidth: 50%;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.8em;\n\tborder-radius: 10px;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\tmin-height: 100%;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.5em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\twidth: 200px;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.8em;\n\tborder-radius: 10px;\n}\n", ""]);
 
   // exports
 
