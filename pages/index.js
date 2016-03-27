@@ -44,9 +44,11 @@ export default class extends Component {
             <p>alienbox is a menubar app for checking your reddit inbox.</p>
             <p>it was built from the ground up with Electron, VueJS, and the Reddit API.</p>
             <div className="row center-xs">
-              <div className="visitButton" style={{backgroundColor: '#FF6600'}}>
-              Check it out!
-              </div>
+              <a href="/alienbox">
+                <div className="visitButton" style={{backgroundColor: '#FF6600'}}>
+                  Check it out!
+                </div>
+              </a>
             </div>
           </div>
           <div className="col-sm-6 col-xs-12">
