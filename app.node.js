@@ -65,13 +65,13 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(27);
+  var _reactDom = __webpack_require__(29);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
   var _fbjsLibExecutionEnvironment = __webpack_require__(3);
 
-  var _libLocation = __webpack_require__(11);
+  var _libLocation = __webpack_require__(12);
 
   var _libLocation2 = _interopRequireDefault(_libLocation);
 
@@ -81,17 +81,17 @@ module.exports =
 
   var routes = {
     '/404': function _() {
-      return __webpack_require__(12);
-    }, '/500': function _() {
       return __webpack_require__(13);
-    }, '/blog': function blog() {
+    }, '/500': function _() {
       return __webpack_require__(14);
-    }, '/blog/test-article-one': function blogTestArticleOne() {
+    }, '/blog': function blog() {
       return __webpack_require__(15);
-    }, '/blog/test-article-two': function blogTestArticleTwo() {
+    }, '/blog/test-article-one': function blogTestArticleOne() {
       return __webpack_require__(16);
-    }, '/': function _() {
+    }, '/blog/test-article-two': function blogTestArticleTwo() {
       return __webpack_require__(17);
+    }, '/': function _() {
+      return __webpack_require__(18);
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
   var route = function route(path, callback) {
@@ -253,7 +253,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(18);
+  __webpack_require__(19);
 
   var BigText = (function (_Component) {
     _inherits(BigText, _Component);
@@ -317,7 +317,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(19);
+  __webpack_require__(20);
 
   var Grid = (function (_Component) {
     _inherits(Grid, _Component);
@@ -391,9 +391,9 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(20);
+  __webpack_require__(21);
 
-  var _MoxBox = __webpack_require__(8);
+  var _MoxBox = __webpack_require__(9);
 
   var _MoxBox2 = _interopRequireDefault(_MoxBox);
 
@@ -459,7 +459,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(21);
+  __webpack_require__(22);
 
   var Layout = (function (_Component) {
     _inherits(Layout, _Component);
@@ -523,7 +523,114 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(22);
+  __webpack_require__(23);
+
+  var Modal = (function (_Component) {
+    _inherits(Modal, _Component);
+
+    function Modal() {
+      _classCallCheck(this, Modal);
+
+      _get(Object.getPrototypeOf(Modal.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(Modal, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          { className: 'Modal', style: { display: this.props.show ? '' : 'none' } },
+          _react2['default'].createElement(
+            'div',
+            { className: 'row between-xs' },
+            _react2['default'].createElement(
+              'div',
+              { className: '' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'backBtn', onClick: this.props.back },
+                _react2['default'].createElement('i', { className: 'fa fa-chevron-circle-left' })
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: '' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'MoxBoxSmall', onClick: this.props.back },
+                'Max Krieger'
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              null,
+              _react2['default'].createElement('div', null)
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'row center-xs start-sm' },
+            _react2['default'].createElement(
+              'h1',
+              null,
+              this.props.title
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'row content' },
+            this.props.children
+          )
+        );
+      }
+    }], [{
+      key: 'propTypes',
+      value: {
+        children: _react.PropTypes.element.isRequired,
+        back: _react.PropTypes.element.func,
+        title: _react.PropTypes.string,
+        show: _react.PropTypes.bool
+      },
+      enumerable: true
+    }]);
+
+    return Modal;
+  })(_react.Component);
+
+  exports['default'] = Modal;
+  module.exports = exports['default'];
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(24);
 
   var Layout = (function (_Component) {
     _inherits(Layout, _Component);
@@ -558,85 +665,6 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  __webpack_require__(23);
-
-  var ProjectBox = (function (_Component) {
-    _inherits(ProjectBox, _Component);
-
-    function ProjectBox() {
-      _classCallCheck(this, ProjectBox);
-
-      _get(Object.getPrototypeOf(ProjectBox.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(ProjectBox, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'a',
-          { href: '#' },
-          _react2['default'].createElement(
-            'div',
-            { className: 'ProjectBox', style: { backgroundImage: 'url(' + this.props.image + ')', backgroundSize: 'cover' } },
-            _react2['default'].createElement(
-              'div',
-              { className: 'Overlay row center-xs middle-xs' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'Title' },
-                this.props.title
-              )
-            )
-          )
-        );
-      }
-    }], [{
-      key: 'propTypes',
-      value: {
-        children: _react.PropTypes.element.isRequired,
-        name: _react.PropTypes.string,
-        image: _react.PropTypes.string,
-        title: _react.PropTypes.string
-      },
-      enumerable: true
-    }]);
-
-    return ProjectBox;
-  })(_react.Component);
-
-  exports['default'] = ProjectBox;
-  module.exports = exports['default'];
-
-/***/ },
 /* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -666,7 +694,91 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(24);
+  __webpack_require__(25);
+
+  var ProjectBox = (function (_Component) {
+    _inherits(ProjectBox, _Component);
+
+    function ProjectBox() {
+      _classCallCheck(this, ProjectBox);
+
+      _get(Object.getPrototypeOf(ProjectBox.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(ProjectBox, [{
+      key: 'render',
+      value: function render() {
+        var _this = this;
+
+        return _react2['default'].createElement(
+          'a',
+          { href: '#', onClick: function () {
+              return _this.props.clicked(_this.props.title);
+            } },
+          _react2['default'].createElement(
+            'div',
+            { className: 'ProjectBox', style: { backgroundImage: 'url(' + this.props.image + ')', backgroundSize: 'cover' } },
+            _react2['default'].createElement(
+              'div',
+              { className: 'Overlay row center-xs middle-xs' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'Title' },
+                this.props.title
+              )
+            )
+          )
+        );
+      }
+    }], [{
+      key: 'propTypes',
+      value: {
+        children: _react.PropTypes.element.isRequired,
+        clicked: _react2['default'].PropTypes.func,
+        name: _react.PropTypes.string,
+        image: _react.PropTypes.string,
+        title: _react.PropTypes.string
+      },
+      enumerable: true
+    }]);
+
+    return ProjectBox;
+  })(_react.Component);
+
+  exports['default'] = ProjectBox;
+  module.exports = exports['default'];
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(26);
 
   var SocialMedia = (function (_Component) {
     _inherits(SocialMedia, _Component);
@@ -731,7 +843,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -750,11 +862,11 @@ module.exports =
 
   var _fbjsLibExecutionEnvironment = __webpack_require__(3);
 
-  var _historyLibCreateBrowserHistory = __webpack_require__(25);
+  var _historyLibCreateBrowserHistory = __webpack_require__(27);
 
   var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
 
-  var _historyLibUseQueries = __webpack_require__(26);
+  var _historyLibUseQueries = __webpack_require__(28);
 
   var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
 
@@ -764,7 +876,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -829,7 +941,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -900,7 +1012,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -965,7 +1077,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1030,7 +1142,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1095,7 +1207,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1132,7 +1244,7 @@ module.exports =
 
   var _componentsBigText2 = _interopRequireDefault(_componentsBigText);
 
-  var _componentsSocialmedia = __webpack_require__(10);
+  var _componentsSocialmedia = __webpack_require__(11);
 
   var _componentsSocialmedia2 = _interopRequireDefault(_componentsSocialmedia);
 
@@ -1140,37 +1252,143 @@ module.exports =
 
   var _componentsGrid2 = _interopRequireDefault(_componentsGrid);
 
-  var _componentsProjectBox = __webpack_require__(9);
+  var _componentsProjectBox = __webpack_require__(10);
 
   var _componentsProjectBox2 = _interopRequireDefault(_componentsProjectBox);
+
+  var _componentsModal = __webpack_require__(8);
+
+  var _componentsModal2 = _interopRequireDefault(_componentsModal);
 
   var _default = (function (_Component) {
     _inherits(_default, _Component);
 
-    function _default() {
+    function _default(props) {
       _classCallCheck(this, _default);
 
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
+      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).call(this, props);
+      this.state = {
+        show: ''
+      };
     }
 
     _createClass(_default, [{
+      key: 'showProject',
+      value: function showProject(project) {
+        this.setState({ show: project });
+      }
+    }, {
+      key: 'hideProject',
+      value: function hideProject() {
+        this.setState({ show: '' });
+      }
+    }, {
       key: 'render',
       value: function render() {
+        var _this = this;
+
         return _react2['default'].createElement(
           'div',
-          null,
-          _react2['default'].createElement(_componentsHeader2['default'], null),
+          { className: 'page' },
           _react2['default'].createElement(
-            _componentsBigText2['default'],
-            null,
-            'A designer & developer from Boston, currently in high school.'
+            'div',
+            { className: 'showing' },
+            _react2['default'].createElement(_componentsHeader2['default'], null),
+            _react2['default'].createElement(
+              _componentsBigText2['default'],
+              null,
+              'A designer & developer from Boston, currently in high school.'
+            ),
+            _react2['default'].createElement(_componentsSocialmedia2['default'], null),
+            _react2['default'].createElement(
+              _componentsGrid2['default'],
+              { title: 'Projects' },
+              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                  return _this.showProject(item);
+                }, title: 'alienbox', image: 'alienbox.png' }),
+              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                  return _this.showProject(item);
+                }, title: 'Tabmaster', image: 'tabmaster.png' })
+            )
           ),
-          _react2['default'].createElement(_componentsSocialmedia2['default'], null),
           _react2['default'].createElement(
-            _componentsGrid2['default'],
-            { title: 'Projects' },
-            _react2['default'].createElement(_componentsProjectBox2['default'], { title: 'alienbox', image: 'alienbox.png' }),
-            _react2['default'].createElement(_componentsProjectBox2['default'], { title: 'Tabmaster', image: 'tabmaster.png' })
+            _componentsModal2['default'],
+            { show: this.state.show === 'alienbox', back: function () {
+                return _this.hideProject();
+              }, title: 'alienbox' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                'alienbox is a menubar app for checking your reddit inbox.'
+              ),
+              _react2['default'].createElement(
+                'p',
+                null,
+                'it was built from the ground up with Electron, VueJS, and the Reddit API.'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '/alienbox' },
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'visitButton', style: { backgroundColor: '#FF6600' } },
+                  'Check it out!'
+                )
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'div',
+                  null,
+                  _react2['default'].createElement('img', { width: '300', src: 'alienbox.png' })
+                )
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            _componentsModal2['default'],
+            { show: this.state.show === 'Tabmaster', back: function () {
+                return _this.hideProject();
+              }, title: 'Tabmaster' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                'Tabmaster is a chrome extension allowing for easier management of stray tabs.'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn' },
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'visitButton', style: { backgroundColor: '#03B941' } },
+                  'Check it out!'
+                )
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'div',
+                  null,
+                  _react2['default'].createElement('img', { width: '300', src: 'tabmaster.png' })
+                )
+              )
+            )
           )
         );
       }
@@ -1183,7 +1401,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 18 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1197,7 +1415,7 @@ module.exports =
 
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1211,7 +1429,7 @@ module.exports =
 
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1225,7 +1443,7 @@ module.exports =
 
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1239,20 +1457,6 @@ module.exports =
 
 
 /***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-
-
-  // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.MoxBox {\n\tborder: 1px solid #FFFFFF;\n\tpadding: 8px 20px;\n\tdisplay: inline-block;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 2em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n.MoxBox:hover {\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n", ""]);
-
-  // exports
-
-
-/***/ },
 /* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1261,7 +1465,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.ProjectBox {\n\twidth: 300px;\n\theight: 200px;\n\tbackground-color: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n\t-webkit-box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);\n\t        box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);\n\tmargin: 10px;\n\toverflow: hidden;\n}\n\n.ProjectBox .Overlay {\n\tbackground-color: rgba(255, 255, 255, 1);\n\twidth: 300px;\n\theight: 200px;\n\tcolor: #171717;\n\topacity: 0;\n\t-webkit-transition: 0.2s;\n\t-o-transition: 0.2s;\n\ttransition: 0.2s;\n\tmargin: 0;\n}\n\n.ProjectBox .Overlay .Title {\n\tfont-weight: 200;\n\tfont-family: \"Roboto Slab\", sans-serif;\n\tfont-size: 2.5em;\n}\n.ProjectBox:hover {\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n\t-webkit-box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);\n\t        box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);\n}\n.ProjectBox:hover .Overlay {\n\t-webkit-transition: 0.2s;\n\t-o-transition: 0.2s;\n\ttransition: 0.2s;\n\topacity: 0.9;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\tmin-height: 100%;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.5em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\twidth: 50%;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.8em;\n\tborder-radius: 10px;\n}\n", ""]);
 
   // exports
 
@@ -1275,25 +1479,53 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.SocialMedia a {\n\n    padding: 10px;\n\n    font-size: 1.5em;\n\n    -webkit-transition: 0.3s;\n\n    -o-transition: 0.3s;\n\n    transition: 0.3s;\n}\n\n.SocialMedia a:hover {\n\n    background-color: #FFFFFF;\n\n    color: #171717;\n\n    -webkit-transition: 0.3s;\n\n    -o-transition: 0.3s;\n\n    transition: 0.3s;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.MoxBox {\n\tborder: 1px solid #FFFFFF;\n\tpadding: 8px 20px;\n\tdisplay: inline-block;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 2em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n.MoxBox:hover {\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n", ""]);
 
   // exports
 
 
 /***/ },
 /* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.ProjectBox {\n\twidth: 300px;\n\theight: 200px;\n\tbackground-color: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n\t-webkit-box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);\n\t        box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);\n\tmargin: 10px;\n\toverflow: hidden;\n}\n\n.ProjectBox .Overlay {\n\tbackground-color: rgba(255, 255, 255, 1);\n\twidth: 300px;\n\theight: 200px;\n\tcolor: #171717;\n\topacity: 0;\n\t-webkit-transition: 0.2s;\n\t-o-transition: 0.2s;\n\ttransition: 0.2s;\n\tmargin: 0;\n}\n\n.ProjectBox .Overlay .Title {\n\tfont-weight: 200;\n\tfont-family: \"Roboto Slab\", sans-serif;\n\tfont-size: 2.5em;\n}\n.ProjectBox:hover {\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n\t-webkit-box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);\n\t        box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);\n}\n.ProjectBox:hover .Overlay {\n\t-webkit-transition: 0.2s;\n\t-o-transition: 0.2s;\n\ttransition: 0.2s;\n\topacity: 0.9;\n}\n", ""]);
+
+  // exports
+
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.SocialMedia a {\n\n    padding: 10px;\n\n    font-size: 1.5em;\n\n    -webkit-transition: 0.3s;\n\n    -o-transition: 0.3s;\n\n    transition: 0.3s;\n}\n\n.SocialMedia a:hover {\n\n    background-color: #FFFFFF;\n\n    color: #171717;\n\n    -webkit-transition: 0.3s;\n\n    -o-transition: 0.3s;\n\n    transition: 0.3s;\n}\n", ""]);
+
+  // exports
+
+
+/***/ },
+/* 27 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createBrowserHistory");
 
 /***/ },
-/* 26 */
+/* 28 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/useQueries");
 
 /***/ },
-/* 27 */
+/* 29 */
 /***/ function(module, exports) {
 
   module.exports = require("react-dom");
