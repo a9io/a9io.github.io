@@ -1,0 +1,60 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+ */
+
+@import '../variables.scss';
+
+.Modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	z-index: 10;
+	background-color: $border-color;
+	color: $body-bg;
+	padding-top: 2em;
+	h1 {
+		font-weight: 200;
+		margin-left: 5vw;
+		margin-bottom: 0;
+		font-size: 4.5em;
+	}
+	.MoxBoxSmall {
+		border: 1px solid $body-bg;
+		padding: 6px 18px;
+		font-weight: 100;
+		font-style: italic;
+		font-size: 1.8em;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.MoxBoxSmall:hover {
+		background-color: $body-bg;
+		color: $text-color;
+		transition: 0.3s;
+	}
+	.backBtn {
+		margin-left: 3vw;
+		font-size: 2em;
+		color: $body-bg;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.content {
+		padding-left: 3em;
+		p {
+			font-size: 1.5em;
+		}
+		.visitButton {
+			padding: 0.5em;
+			width: 50%;
+			text-align: center;
+			color: #FFFFFF;
+			font-size: 1.8em;
+			border-radius: 10px;
+		}
+	}
+}
