@@ -1,0 +1,39 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+ */
+
+@import '../variables.scss';
+
+.ProjectBox {
+	width: 250px;
+	height: 150px;
+	background-color: #FFFFFF;
+	transition: 0.3s;
+	box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);
+	margin: 10px;
+	overflow: hidden;
+	.Overlay {
+		background-color: rgba(255, 255, 255, 1);
+		width: 250px;
+		height: 150px;
+		color: $body-bg;
+		opacity: 0;
+		transition: 0.2s;
+		margin: 0;
+		.Title {
+			font-weight: 200;
+			font-family: "Roboto Slab", sans-serif;
+			font-size: 2.5em;
+		}
+	}
+}
+.ProjectBox:hover {
+	transition: 0.3s;
+	box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);
+	.Overlay {
+		transition: 0.2s;
+		opacity: 0.9;
+	}
+}
