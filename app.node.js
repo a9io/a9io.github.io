@@ -1333,9 +1333,13 @@ module.exports =
                 'div',
                 { className: 'row center-xs' },
                 _react2['default'].createElement(
-                  'div',
-                  { className: 'visitButton', style: { backgroundColor: '#FF6600' } },
-                  'Check it out!'
+                  'a',
+                  { href: '/alienbox' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'visitButton', style: { backgroundColor: '#FF6600' } },
+                    'Check it out!'
+                  )
                 )
               )
             ),
