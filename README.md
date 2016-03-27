@@ -1,3 +1,0 @@
-# Max Krieger
-
-My website.
