@@ -16,10 +16,9 @@ class Modal extends Component {
     title: PropTypes.string,
     show: PropTypes.bool,
   };
-
   render() {
     return (
-			<div className="Modal" style={{display: (this.props.show ? '' : 'none')}}>
+			<div className={'Modal' + ' ' + (this.props.show ? 'Show' : 'Hide')}>
         <div className="row between-xs">
           <div className="">
           <div className="backBtn" onClick={this.props.back}>

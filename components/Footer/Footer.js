@@ -10,7 +10,6 @@ import './Footer.scss';
 class Footer extends Component {
 
   static propTypes = {
-    children: PropTypes.element.isRequired,
     title: PropTypes.string,
   };
 

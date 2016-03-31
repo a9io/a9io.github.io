@@ -10,7 +10,6 @@ import './ProjectBox.scss';
 class ProjectBox extends Component {
 
   static propTypes = {
-    children: PropTypes.element.isRequired,
     clicked: React.PropTypes.func,
     name: PropTypes.string,
     image: PropTypes.string,

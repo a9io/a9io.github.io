@@ -11,7 +11,6 @@ import MoxBox from '../MoxBox';
 class Header extends Component {
 
   static propTypes = {
-    children: PropTypes.element.isRequired,
   };
 
   render() {

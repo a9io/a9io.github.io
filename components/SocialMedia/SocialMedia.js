@@ -10,7 +10,6 @@ import './SocialMedia.scss';
 class SocialMedia extends Component {
 
   static propTypes = {
-    children: PropTypes.element.isRequired,
     title: PropTypes.string,
   };
 

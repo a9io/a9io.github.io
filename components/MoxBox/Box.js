@@ -10,7 +10,6 @@ import './Box.scss';
 class Layout extends Component {
 
   static propTypes = {
-    children: PropTypes.element.isRequired,
   };
 
   render() {

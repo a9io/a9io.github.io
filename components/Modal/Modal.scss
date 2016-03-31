@@ -8,10 +8,6 @@
 
 .Modal {
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 	z-index: 10;
 	background-color: $border-color;
 	color: $body-bg;
@@ -65,5 +61,31 @@
 		img {
 			margin-top: 1em;
 		}
+	}
+}
+.Modal.Show {
+	display: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	animation: slidein 0.5s;
+}
+.Modal.Hide {
+	display: none;
+}
+
+@keyframes slidein {
+	0% {
+		top: 200%;
+		left: 0;
+		right: 0;
+		bottom: 200%;
+	}
+	100% {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
