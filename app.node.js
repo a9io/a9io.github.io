@@ -279,7 +279,6 @@ module.exports =
     }], [{
       key: 'propTypes',
       value: {
-        children: _react.PropTypes.element.isRequired,
         title: _react.PropTypes.string
       },
       enumerable: true
@@ -491,9 +490,7 @@ module.exports =
       }
     }], [{
       key: 'propTypes',
-      value: {
-        children: _react.PropTypes.element.isRequired
-      },
+      value: {},
       enumerable: true
     }]);
 
@@ -617,7 +614,7 @@ module.exports =
       value: function render() {
         return _react2['default'].createElement(
           'div',
-          { className: 'Modal', style: { display: this.props.show ? '' : 'none' } },
+          { className: 'Modal' + ' ' + (this.props.show ? 'Show' : 'Hide') },
           _react2['default'].createElement(
             'div',
             { className: 'row between-xs' },
@@ -731,9 +728,7 @@ module.exports =
       }
     }], [{
       key: 'propTypes',
-      value: {
-        children: _react.PropTypes.element.isRequired
-      },
+      value: {},
       enumerable: true
     }]);
 
@@ -812,7 +807,6 @@ module.exports =
     }], [{
       key: 'propTypes',
       value: {
-        children: _react.PropTypes.element.isRequired,
         clicked: _react2['default'].PropTypes.func,
         name: _react.PropTypes.string,
         image: _react.PropTypes.string,
@@ -983,7 +977,6 @@ module.exports =
     }], [{
       key: 'propTypes',
       value: {
-        children: _react.PropTypes.element.isRequired,
         title: _react.PropTypes.string
       },
       enumerable: true
@@ -1443,6 +1436,8 @@ module.exports =
       value: function hideProject() {
         this.setState({ show: '' });
       }
+
+      //TODO: floaty shapes
     }, {
       key: 'render',
       value: function render() {
@@ -1686,7 +1681,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn:hover {\n\topacity: 1;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n\tpadding-right: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.2em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\twidth: 200px;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.8em;\n\tborder-radius: 10px;\n}\n\n.Modal .content img {\n\tmargin-top: 1em;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn:hover {\n\topacity: 1;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n\tpadding-right: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.2em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\twidth: 200px;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.8em;\n\tborder-radius: 10px;\n}\n\n.Modal .content img {\n\tmargin-top: 1em;\n}\n.Modal.Show {\n\tdisplay: \"\";\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\t-webkit-animation: slidein 0.5s;\n\t     -o-animation: slidein 0.5s;\n\t        animation: slidein 0.5s;\n}\n.Modal.Hide {\n\tdisplay: none;\n}\n\n@-webkit-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@-o-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n", ""]);
 
   // exports
 
