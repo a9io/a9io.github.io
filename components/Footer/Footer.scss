@@ -1,0 +1,24 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+ */
+
+@import '../variables.scss';
+
+.Footer {
+	text-align: center;
+	opacity: 0.6;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+	h1 {
+		cursor: pointer;
+		font-weight: 200;
+		font-size: 3em;
+		margin: 0;
+	}
+	p {
+		font-size: 0.8em;
+		margin: 0;
+	}
+}

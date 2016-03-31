@@ -13,10 +13,11 @@ html, body {
   background-color: $body-bg;
   color: $text-color;
   font-family: $font-family-base;
+  position: relative;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 	color: inherit;
 }
 

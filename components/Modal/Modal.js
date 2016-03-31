@@ -6,6 +6,7 @@
 
 import React, { Component, PropTypes } from 'react';
 import './Modal.scss';
+import Footer from '../Footer';
 
 class Modal extends Component {
 
@@ -36,6 +37,7 @@ class Modal extends Component {
           <h1>{this.props.title}</h1>
         </div>
         <div className="row content">{this.props.children}</div>
+        <Footer />
 			</div>
     );
   }
