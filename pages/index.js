@@ -27,6 +27,7 @@ export default class extends Component {
   hideProject() {
     this.setState({show: ''});
   }
+  //TODO: floaty shapes
   render() {
     return (
       <div className="page">
@@ -37,13 +38,14 @@ export default class extends Component {
 				</BigText>
 				<SocialMedia />
 				<Grid title="Projects">
+                    <ProjectBox clicked={(item) => this.showProject(item)} title="Spotify Offline" image="spotify-offline.png"/>
 					<ProjectBox clicked={(item) => this.showProject(item)} title="alienbox" image="alienbox.png"/>
 					<ProjectBox clicked={(item) => this.showProject(item)} title="Tabmaster" image="tabmaster.png"/>
 				</Grid>
         <Section title="About">
           <div className="row">
           <div className="col-sm-6 col-xs-12">
-          <p>I'm a designer & developer in high school from the Boston area who has a passion in human-computer interaction and automation. I develop small tools and larger projects in my free time.</p>
+          <p>I'm a designer & developer in high school from the Boston area who has a passion for human-computer interaction and automation. I develop small tools and larger projects in my free time.</p>
           </div>
           <div className="col-sm-6 col-xs-12">
             <p>I also participate in my school's robotics team and run the Linguistics club there.</p>
@@ -92,7 +94,26 @@ export default class extends Component {
             </div>
           </div>
         </Modal>
-      </div>
+        <Modal show={(this.state.show === 'Spotify Offline')} back={() => this.hideProject()} title="Spotify Offline">
+            <div className="col-sm-6 col-xs-12">
+                <p>I explored how one can better manage their disk space with their Spotify offline music. What resulted was a concept that expanded upon Spotify's existing style.</p>
+                <div className="row center-xs">
+                <a href="https://www.behance.net/gallery/40743493/Spotify-Offline-Concept-Experience">
+                    <div className="visitButton" style={{backgroundColor: '#1ED760'}}>
+                        Check it out!
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div className="col-sm-6 col-xs-12">
+            <div className="row center-xs">
+            <div>
+                <img width="300" src="spotify-offline.png" />
+            </div>
+        </div>
+    </div>
+    </Modal>
+     </div>
     );
   }
 
