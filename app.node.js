@@ -1461,6 +1461,9 @@ module.exports =
               { title: 'Projects' },
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
+                }, title: 'Spotify Offline', image: 'spotify-offline.png' }),
+              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                  return _this.showProject(item);
                 }, title: 'alienbox', image: 'alienbox.png' }),
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
@@ -1591,6 +1594,47 @@ module.exports =
                 )
               )
             )
+          ),
+          _react2['default'].createElement(
+            _componentsModal2['default'],
+            { show: this.state.show === 'Spotify Offline', back: function () {
+                return _this.hideProject();
+              }, title: 'Spotify Offline' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                'I explored how one can better manage their disk space with their Spotify offline music. What resulted was a concept that expanded upon Spotify\'s existing style.'
+              ),
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'a',
+                  { href: 'https://www.behance.net/gallery/40743493/Spotify-Offline-Concept-Experience' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'visitButton', style: { backgroundColor: '#1ED760' } },
+                    'Check it out!'
+                  )
+                )
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'div',
+                  null,
+                  _react2['default'].createElement('img', { width: '300', src: 'spotify-offline.png' })
+                )
+              )
+            )
           )
         );
       }
@@ -1681,7 +1725,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn:hover {\n\topacity: 1;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n\tpadding-right: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.2em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\twidth: 200px;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.8em;\n\tborder-radius: 10px;\n}\n\n.Modal .content img {\n\tmargin-top: 1em;\n}\n.Modal.Show {\n\tdisplay: \"\";\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\t-webkit-animation: slidein 0.5s;\n\t     -o-animation: slidein 0.5s;\n\t        animation: slidein 0.5s;\n}\n.Modal.Hide {\n\tdisplay: none;\n}\n\n@-webkit-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@-o-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn:hover {\n\topacity: 1;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n\tpadding-right: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.2em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\twidth: 150px;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.5em;\n\tborder-radius: 10px;\n}\n\n.Modal .content img {\n\tmargin-top: 1em;\n}\n.Modal.Show {\n\tdisplay: \"\";\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\t-webkit-animation: slidein 0.5s;\n\t     -o-animation: slidein 0.5s;\n\t        animation: slidein 0.5s;\n}\n.Modal.Hide {\n\tdisplay: none;\n}\n\n@-webkit-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@-o-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n", ""]);
 
   // exports
 
