@@ -10,7 +10,7 @@ import task from './lib/task';
 // TODO: Update deployment URL
 const remote = {
   name: 'github',
-  url: 'https://github.com/maxkrieger/maxkrieger.github.io.git',
+  url: 'git@github.com:maxkrieger/maxkrieger.github.io.git',
   branch: 'master',
 };
 
