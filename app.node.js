@@ -1436,8 +1436,6 @@ module.exports =
       value: function hideProject() {
         this.setState({ show: '' });
       }
-
-      //TODO: floaty shapes
     }, {
       key: 'render',
       value: function render() {
@@ -1459,6 +1457,9 @@ module.exports =
             _react2['default'].createElement(
               _componentsGrid2['default'],
               { title: 'Projects' },
+              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                  return _this.showProject(item);
+                }, title: 'LiquidTime', image: 'liquidtime.png' }),
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
                 }, title: 'Spotify Offline', image: 'spotify-offline.png' }),
@@ -1549,6 +1550,52 @@ module.exports =
                   'div',
                   null,
                   _react2['default'].createElement('img', { width: '300', src: 'alienbox.png' })
+                )
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            _componentsModal2['default'],
+            { show: this.state.show === 'LiquidTime', back: function () {
+                return _this.hideProject();
+              }, title: 'LiquidTime' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                'I developed and designed a full time management and tracking app.'
+              ),
+              _react2['default'].createElement(
+                'p',
+                null,
+                'It has an emphasis on making every plan fit, with easy rescheduling and pomodoro-style timing.'
+              ),
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'a',
+                  { href: 'https://liquidti.me' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'visitButton', style: { backgroundColor: '#5850ff' } },
+                    'Check it out!'
+                  )
+                )
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'div',
+                  null,
+                  _react2['default'].createElement('img', { width: '500', src: 'liquidtime.png' })
                 )
               )
             )
