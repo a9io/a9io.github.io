@@ -27,7 +27,6 @@ export default class extends Component {
   hideProject() {
     this.setState({show: ''});
   }
-  //TODO: floaty shapes
   render() {
     return (
       <div className="page">
@@ -38,7 +37,8 @@ export default class extends Component {
 				</BigText>
 				<SocialMedia />
 				<Grid title="Projects">
-                    <ProjectBox clicked={(item) => this.showProject(item)} title="Spotify Offline" image="spotify-offline.png"/>
+          <ProjectBox clicked={(item) => this.showProject(item)} title="LiquidTime" image="liquidtime.png"/>
+          <ProjectBox clicked={(item) => this.showProject(item)} title="Spotify Offline" image="spotify-offline.png"/>
 					<ProjectBox clicked={(item) => this.showProject(item)} title="alienbox" image="alienbox.png"/>
 					<ProjectBox clicked={(item) => this.showProject(item)} title="Tabmaster" image="tabmaster.png"/>
 				</Grid>
@@ -78,6 +78,26 @@ export default class extends Component {
             </div>
           </div>
 				</Modal>
+        <Modal show={(this.state.show === 'LiquidTime')} back={() => this.hideProject()} title="LiquidTime">
+            <div className="col-sm-6 col-xs-12">
+                <p>I developed and designed a full time management and tracking app.</p>
+                <p>It has an emphasis on making every plan fit, with easy rescheduling and pomodoro-style timing.</p>
+                <div className="row center-xs">
+                  <a href="https://liquidti.me">
+                    <div className="visitButton" style={{backgroundColor: '#5850ff'}}>
+                      Check it out!
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div className="col-sm-6 col-xs-12">
+              <div className="row center-xs">
+                <div>
+                  <img width="500" src="liquidtime.png" />
+                </div>
+              </div>
+            </div>
+        </Modal>
         <Modal show={(this.state.show === 'CabinetCloud')} back={() => this.hideProject()} title="CabinetCloud">
             <div className="col-sm-6 col-xs-12">
                 <p>I remotely interned at a local Boston-based startup called CabinetCloud with a team of 5 to develop a CRM product for local governments. The product would leverage smart government for local municipalities, aiding in their communication, organization, and analyzing with constituents. It received a microgrant from the Santander Urban Impact program, and had the endorsement of multiple local legislators.</p>
