@@ -1478,6 +1478,9 @@ module.exports =
                 }, title: 'CabinetCloud', image: 'cabinet.png' }),
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
+                }, title: 'MAHacks', image: 'mahacks.png' }),
+              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                  return _this.showProject(item);
                 }, title: 'MIT Racecar', image: 'racecar.png' })
             ),
             _react2['default'].createElement(
@@ -1591,7 +1594,7 @@ module.exports =
                 _react2['default'].createElement(
                   'a',
                   { style: { textDecoration: 'underline' }, href: 'https://liquidti.me/about' },
-                  'hundreds of hours'
+                  'thousands of hours'
                 ),
                 ' of productivity have been logged by thousands of users.'
               ),
@@ -1662,7 +1665,54 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   null,
-                  _react2['default'].createElement('img', { width: '500', src: 'cabinet.png' })
+                  _react2['default'].createElement('img', { width: '100%', src: 'cabinet.png' })
+                )
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            _componentsModal2['default'],
+            { show: this.state.show === 'MAHacks', back: function () {
+                return _this.hideProject();
+              }, title: 'MAHacks' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                'I developed the brand identity and website of a series of Massachusetts high school hackathons with hundreds of attendees.'
+              ),
+              _react2['default'].createElement(
+                'p',
+                null,
+                'The event was hosted at the MIT Stata Center.'
+              ),
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'a',
+                  { href: 'http://mahacks.com' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'visitButton', style: { backgroundColor: '#14ADC2' } },
+                    'Check it out!'
+                  )
+                )
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'div',
+                  null,
+                  _react2['default'].createElement('img', { width: '100%', src: 'mahacks.png' }),
+                  _react2['default'].createElement('img', { width: '100%', src: 'mascreen.png' })
                 )
               )
             )
@@ -1719,7 +1769,7 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   null,
-                  _react2['default'].createElement('img', { width: '500', src: 'racecar.png' })
+                  _react2['default'].createElement('img', { width: '100%', src: 'racecar.png' })
                 )
               )
             )
