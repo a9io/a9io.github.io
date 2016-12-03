@@ -44,6 +44,7 @@ export default class extends Component {
 				</Grid>
         <Grid title="Experience">
           <ProjectBox clicked={(item) => this.showProject(item)} title="CabinetCloud" image="cabinet.png" />
+          <ProjectBox clicked={(item) => this.showProject(item)} title="MAHacks" image="mahacks.png" />
           <ProjectBox clicked={(item) => this.showProject(item)} title="MIT Racecar" image="racecar.png" />
         </Grid>
         <Section title="About">
@@ -82,6 +83,7 @@ export default class extends Component {
             <div className="col-sm-6 col-xs-12">
                 <p>I developed and designed a full time management and tracking app.</p>
                 <p>It has an emphasis on making every plan fit, with easy rescheduling and pomodoro-style timing.</p>
+                <p>It reached the top of <a style={{textDecoration: 'underline'}} href="https://news.ycombinator.com">Hacker News</a> and <a href="https://producthunt.com" style={{textDecoration: 'underline'}}>Product Hunt</a>. To date, <a style={{textDecoration: 'underline'}} href="https://liquidti.me/about">thousands of hours</a> of productivity have been logged by thousands of users.</p>
                 <div className="row center-xs">
                   <a href="https://liquidti.me">
                     <div className="visitButton" style={{backgroundColor: '#5850ff'}}>
@@ -95,6 +97,7 @@ export default class extends Component {
                 <div>
                   <img width="500" src="liquidtime.png" />
                 </div>
+                <iframe style={{border: 'none'}} src="https://cards.producthunt.com/cards/posts/80262?v=1" width="500" height="405" frameBorder="0" scrolling="no" allowFullScreen />
               </div>
             </div>
         </Modal>
@@ -108,7 +111,28 @@ export default class extends Component {
             <div className="col-sm-6 col-xs-12">
               <div className="row center-xs">
                 <div>
-                  <img width="500" src="cabinet.png" />
+                  <img width="100%" src="cabinet.png" />
+                </div>
+              </div>
+            </div>
+        </Modal>
+        <Modal show={(this.state.show === 'MAHacks')} back={() => this.hideProject()} title="MAHacks">
+            <div className="col-sm-6 col-xs-12">
+                <p>I developed the brand identity and website of a series of Massachusetts high school hackathons with hundreds of attendees.</p>
+                <p>The event was hosted at the MIT Stata Center.</p>
+                  <div className="row center-xs">
+                    <a href="http://mahacks.com">
+                      <div className="visitButton" style={{backgroundColor: '#14ADC2'}}>
+                        Check it out!
+                      </div>
+                    </a>
+                  </div>
+            </div>
+            <div className="col-sm-6 col-xs-12">
+              <div className="row center-xs">
+                <div>
+                  <img width="100%" src="mahacks.png" />
+                  <img width="100%" src="mascreen.png" />
                 </div>
               </div>
             </div>
@@ -129,7 +153,7 @@ export default class extends Component {
           <div className="col-sm-6 col-xs-12">
             <div className="row center-xs">
               <div>
-                <img width="500" src="racecar.png" />
+                <img width="100%" src="racecar.png" />
               </div>
             </div>
           </div>
