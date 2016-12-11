@@ -74,7 +74,7 @@ export default class extends Component {
           <div className="col-sm-6 col-xs-12">
             <div className="row center-xs">
               <div>
-                <img width="300" src="alienbox.png" />
+                <img width="100%" src="alienbox.png" />
               </div>
             </div>
           </div>
@@ -95,9 +95,9 @@ export default class extends Component {
             <div className="col-sm-6 col-xs-12">
               <div className="row center-xs">
                 <div>
-                  <img width="500" src="liquidtime.png" />
+                  <img width="100%" src="liquidtime.png" />
                 </div>
-                <iframe style={{border: 'none'}} src="https://cards.producthunt.com/cards/posts/80262?v=1" width="500" height="405" frameBorder="0" scrolling="no" allowFullScreen />
+                <iframe style={{border: 'none'}} src="https://cards.producthunt.com/cards/posts/80262?v=1" width="100%" height="405" frameBorder="0" scrolling="no" allowFullScreen />
               </div>
             </div>
         </Modal>
@@ -172,7 +172,7 @@ export default class extends Component {
           <div className="col-sm-6 col-xs-12">
             <div className="row center-xs">
               <div>
-                <img width="300" src="tabmaster.png" />
+                <img width="100%" src="tabmaster.png" />
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default class extends Component {
         <div className="col-sm-6 col-xs-12">
             <div className="row center-xs">
             <div>
-                <img width="300" src="spotify-offline.png" />
+                <img width="100%" src="spotify-offline.png" />
             </div>
         </div>
     </div>
