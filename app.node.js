@@ -1552,7 +1552,7 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   null,
-                  _react2['default'].createElement('img', { width: '300', src: 'alienbox.png' })
+                  _react2['default'].createElement('img', { width: '100%', src: 'alienbox.png' })
                 )
               )
             )
@@ -1621,9 +1621,9 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   null,
-                  _react2['default'].createElement('img', { width: '500', src: 'liquidtime.png' })
+                  _react2['default'].createElement('img', { width: '100%', src: 'liquidtime.png' })
                 ),
-                _react2['default'].createElement('iframe', { style: { border: 'none' }, src: 'https://cards.producthunt.com/cards/posts/80262?v=1', width: '500', height: '405', frameBorder: '0', scrolling: 'no', allowFullScreen: true })
+                _react2['default'].createElement('iframe', { style: { border: 'none' }, src: 'https://cards.producthunt.com/cards/posts/80262?v=1', width: '100%', height: '405', frameBorder: '0', scrolling: 'no', allowFullScreen: true })
               )
             )
           ),
@@ -1810,7 +1810,7 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   null,
-                  _react2['default'].createElement('img', { width: '300', src: 'tabmaster.png' })
+                  _react2['default'].createElement('img', { width: '100%', src: 'tabmaster.png' })
                 )
               )
             )
@@ -1851,7 +1851,7 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   null,
-                  _react2['default'].createElement('img', { width: '300', src: 'spotify-offline.png' })
+                  _react2['default'].createElement('img', { width: '100%', src: 'spotify-offline.png' })
                 )
               )
             )
