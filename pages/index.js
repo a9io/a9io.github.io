@@ -39,6 +39,7 @@ export default class extends Component {
 				<Grid title="Projects">
           <ProjectBox clicked={(item) => this.showProject(item)} title="LiquidTime" image="liquidtime.png"/>
           <ProjectBox clicked={(item) => this.showProject(item)} title="Spotify Offline" image="spotify-offline.png"/>
+					<ProjectBox clicked={(item) => this.showProject(item)} title="A-Frame Components" image="aframe.png"/>
 					<ProjectBox clicked={(item) => this.showProject(item)} title="alienbox" image="alienbox.png"/>
 					<ProjectBox clicked={(item) => this.showProject(item)} title="Tabmaster" image="tabmaster.png"/>
 				</Grid>
@@ -54,6 +55,7 @@ export default class extends Component {
           </div>
           <div className="col-sm-6 col-xs-12">
             <p>I also participate in my school's robotics team and run the Linguistics club there.</p>
+            <p>You can view my resume <a href="resume.pdf">here.</a></p>
           </div>
           </div>
         </Section>
@@ -116,9 +118,30 @@ export default class extends Component {
               </div>
             </div>
         </Modal>
+        <Modal show={(this.state.show === 'A-Frame Components')} back={() => this.hideProject()} title="A-Frame Components">
+            <div className="col-sm-6 col-xs-12">
+                <p>I developed several open source components for Mozilla's <a href="https://aframe.io">A-Frame</a> VR platform, a framework which aims to make WebVR development more accessible.</p>
+                <p>They focus on implementation of the HTML5 canvas API on a flat VR surface, opening potential for 2d interfaces, text, images, and graphics within a virtual world.</p>
+                  <div className="row center-xs">
+                    <a href="https://github.com/maxkrieger/aframe-draw-component">
+                      <div className="visitButton" style={{backgroundColor: '#ef2d5e'}}>
+                        Check it out!
+                      </div>
+                    </a>
+                  </div>
+            </div>
+            <div className="col-sm-6 col-xs-12">
+              <div className="row center-xs">
+                <div>
+                  <img width="100%" src="aframe-text.png" />
+                  <a href="https://aframe.io/blog/aframe-v0.2.0/"><img width="100%" src="aframe-post.png" /></a>
+                </div>
+              </div>
+            </div>
+        </Modal>
         <Modal show={(this.state.show === 'MAHacks')} back={() => this.hideProject()} title="MAHacks">
             <div className="col-sm-6 col-xs-12">
-                <p>I developed the brand identity and website of a series of Massachusetts high school hackathons with hundreds of attendees.</p>
+                <p>I developed the brand identity and website of a series of Massachusetts high school hackathons with over one hundred attendees.</p>
                 <p>The event was hosted at the MIT Stata Center.</p>
                   <div className="row center-xs">
                     <a href="http://mahacks.com">

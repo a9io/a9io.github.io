@@ -17,7 +17,7 @@ class Footer extends Component {
     return (
       <footer className="Footer">
         <h1>a9</h1>
-        <p>2016</p>
+        <p>{new Date().getFullYear()}</p>
       </footer>
     );
   }
