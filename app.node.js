@@ -272,7 +272,7 @@ module.exports =
           _react2['default'].createElement(
             'p',
             null,
-            '2016'
+            new Date().getFullYear()
           )
         );
       }
@@ -1465,6 +1465,9 @@ module.exports =
                 }, title: 'Spotify Offline', image: 'spotify-offline.png' }),
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
+                }, title: 'A-Frame Components', image: 'aframe.png' }),
+              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                  return _this.showProject(item);
                 }, title: 'alienbox', image: 'alienbox.png' }),
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
@@ -1505,6 +1508,16 @@ module.exports =
                     'p',
                     null,
                     'I also participate in my school\'s robotics team and run the Linguistics club there.'
+                  ),
+                  _react2['default'].createElement(
+                    'p',
+                    null,
+                    'You can view my resume ',
+                    _react2['default'].createElement(
+                      'a',
+                      { href: 'resume.pdf' },
+                      'here.'
+                    )
                   )
                 )
               )
@@ -1672,6 +1685,63 @@ module.exports =
           ),
           _react2['default'].createElement(
             _componentsModal2['default'],
+            { show: this.state.show === 'A-Frame Components', back: function () {
+                return _this.hideProject();
+              }, title: 'A-Frame Components' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                'I developed several open source components for Mozilla\'s ',
+                _react2['default'].createElement(
+                  'a',
+                  { href: 'https://aframe.io' },
+                  'A-Frame'
+                ),
+                ' VR platform, a framework which aims to make WebVR development more accessible.'
+              ),
+              _react2['default'].createElement(
+                'p',
+                null,
+                'They focus on implementation of the HTML5 canvas API on a flat VR surface, opening potential for 2d interfaces, text, images, and graphics within a virtual world.'
+              ),
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'a',
+                  { href: 'https://github.com/maxkrieger/aframe-draw-component' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'visitButton', style: { backgroundColor: '#ef2d5e' } },
+                    'Check it out!'
+                  )
+                )
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'div',
+                  null,
+                  _react2['default'].createElement('img', { width: '100%', src: 'aframe-text.png' }),
+                  _react2['default'].createElement(
+                    'a',
+                    { href: 'https://aframe.io/blog/aframe-v0.2.0/' },
+                    _react2['default'].createElement('img', { width: '100%', src: 'aframe-post.png' })
+                  )
+                )
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            _componentsModal2['default'],
             { show: this.state.show === 'MAHacks', back: function () {
                 return _this.hideProject();
               }, title: 'MAHacks' },
@@ -1681,7 +1751,7 @@ module.exports =
               _react2['default'].createElement(
                 'p',
                 null,
-                'I developed the brand identity and website of a series of Massachusetts high school hackathons with hundreds of attendees.'
+                'I developed the brand identity and website of a series of Massachusetts high school hackathons with over one hundred attendees.'
               ),
               _react2['default'].createElement(
                 'p',
@@ -1973,7 +2043,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.ProjectBox {\n\twidth: 300px;\n\theight: 200px;\n\tbackground-color: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n\t-webkit-box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);\n\t        box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);\n\tmargin: 10px;\n\toverflow: hidden;\n}\n\n.ProjectBox .Overlay {\n\tbackground-color: rgba(255, 255, 255, 1);\n\twidth: 300px;\n\theight: 200px;\n\tcolor: #171717;\n\topacity: 0;\n\t-webkit-transition: 0.2s;\n\t-o-transition: 0.2s;\n\ttransition: 0.2s;\n\tmargin: 0;\n}\n\n.ProjectBox .Overlay .Title {\n\tfont-weight: 200;\n\tfont-family: \"Roboto Slab\", sans-serif;\n\tfont-size: 2.5em;\n}\n.ProjectBox:hover {\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n\t-webkit-box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);\n\t        box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);\n}\n.ProjectBox:hover .Overlay {\n\t-webkit-transition: 0.2s;\n\t-o-transition: 0.2s;\n\ttransition: 0.2s;\n\topacity: 0.9;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.ProjectBox {\n\twidth: 300px;\n\theight: 200px;\n\tbackground-color: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n\t-webkit-box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);\n\t        box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.5);\n\tmargin: 10px;\n\toverflow: hidden;\n}\n\n.ProjectBox .Overlay {\n\tbackground-color: rgba(255, 255, 255, 1);\n\twidth: 300px;\n\theight: 200px;\n\tcolor: #171717;\n\topacity: 0;\n\t-webkit-transition: 0.2s;\n\t-o-transition: 0.2s;\n\ttransition: 0.2s;\n\tmargin: 0;\n}\n\n.ProjectBox .Overlay .Title {\n\tfont-weight: 200;\n\tfont-family: \"Roboto Slab\", sans-serif;\n\tfont-size: 2.5em;\n\tmargin: 20px;\n}\n.ProjectBox:hover {\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n\t-webkit-box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);\n\t        box-shadow: 3px 3px 50px -2px rgba(0,0,0,0.7);\n}\n.ProjectBox:hover .Overlay {\n\t-webkit-transition: 0.2s;\n\t-o-transition: 0.2s;\n\ttransition: 0.2s;\n\topacity: 0.9;\n}\n", ""]);
 
   // exports
 
