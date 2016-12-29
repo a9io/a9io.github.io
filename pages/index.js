@@ -41,7 +41,6 @@ export default class extends Component {
           <ProjectBox clicked={(item) => this.showProject(item)} title="Spotify Offline" image="spotify-offline.png"/>
 					<ProjectBox clicked={(item) => this.showProject(item)} title="A-Frame Components" image="aframe.png"/>
 					<ProjectBox clicked={(item) => this.showProject(item)} title="alienbox" image="alienbox.png"/>
-					<ProjectBox clicked={(item) => this.showProject(item)} title="Tabmaster" image="tabmaster.png"/>
 				</Grid>
         <Grid title="Experience">
           <ProjectBox clicked={(item) => this.showProject(item)} title="CabinetCloud" image="cabinet.png" />
@@ -55,7 +54,7 @@ export default class extends Component {
           </div>
           <div className="col-sm-6 col-xs-12">
             <p>I also participate in my school's robotics team and run the Linguistics club there.</p>
-            <p>You can view my resume <a href="resume.pdf">here.</a></p>
+            <p>You can view my resume <a href="resume.pdf">here</a>.</p>
           </div>
           </div>
         </Section>
