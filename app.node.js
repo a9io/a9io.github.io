@@ -1579,7 +1579,7 @@ module.exports =
               _react2['default'].createElement(
                 'p',
                 null,
-                'I developed and designed a full time management and tracking app.'
+                'I developed and designed a time management and tracking app.'
               ),
               _react2['default'].createElement(
                 'p',
