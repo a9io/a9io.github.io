@@ -1468,10 +1468,7 @@ module.exports =
                 }, title: 'A-Frame Components', image: 'aframe.png' }),
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'alienbox', image: 'alienbox.png' }),
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
-                  return _this.showProject(item);
-                }, title: 'Tabmaster', image: 'tabmaster.png' })
+                }, title: 'alienbox', image: 'alienbox.png' })
             ),
             _react2['default'].createElement(
               _componentsGrid2['default'],
@@ -1516,8 +1513,9 @@ module.exports =
                     _react2['default'].createElement(
                       'a',
                       { href: 'resume.pdf' },
-                      'here.'
-                    )
+                      'here'
+                    ),
+                    '.'
                   )
                 )
               )
