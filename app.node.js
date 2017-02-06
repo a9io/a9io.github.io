@@ -954,11 +954,6 @@ module.exports =
           ),
           _react2['default'].createElement(
             'a',
-            { href: 'https://medium.com/@a9' },
-            _react2['default'].createElement('i', { className: 'fa fa-medium' })
-          ),
-          _react2['default'].createElement(
-            'a',
             { href: 'https://www.last.fm/user/a9_io' },
             _react2['default'].createElement('i', { className: 'fa fa-lastfm' })
           ),
