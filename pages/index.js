@@ -82,7 +82,7 @@ export default class extends Component {
 				</Modal>
         <Modal show={(this.state.show === 'LiquidTime')} back={() => this.hideProject()} title="LiquidTime">
             <div className="col-sm-6 col-xs-12">
-                <p>I developed and designed a full time management and tracking app.</p>
+                <p>I developed and designed a time management and tracking app.</p>
                 <p>It has an emphasis on making every plan fit, with easy rescheduling and pomodoro-style timing.</p>
                 <p>It reached the top of <a style={{textDecoration: 'underline'}} href="https://news.ycombinator.com">Hacker News</a> and <a href="https://producthunt.com" style={{textDecoration: 'underline'}}>Product Hunt</a>. To date, <a style={{textDecoration: 'underline'}} href="https://liquidti.me/about">thousands of hours</a> of productivity have been logged by thousands of users.</p>
                 <div className="row center-xs">
