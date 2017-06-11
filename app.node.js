@@ -1499,7 +1499,7 @@ module.exports =
                   _react2['default'].createElement(
                     'p',
                     null,
-                    'I also participate in my school\'s robotics team and run the Linguistics club there.'
+                    'I also lead my school\'s robotics team and run the linguistics club there.'
                   ),
                   _react2['default'].createElement(
                     'p',
@@ -1744,12 +1744,12 @@ module.exports =
               _react2['default'].createElement(
                 'p',
                 null,
-                'I developed the brand identity and website of a series of Massachusetts high school hackathons with over one hundred attendees.'
+                'I developed the brand identity, materials, and website of a series of Massachusetts high school hackathons with over one hundred attendees.'
               ),
               _react2['default'].createElement(
                 'p',
                 null,
-                'The event was hosted at the MIT Stata Center.'
+                'The events were hosted at the MIT Stata Center in Cambridge and Canopy City Coworking in Somerville.'
               ),
               _react2['default'].createElement(
                 'div',
