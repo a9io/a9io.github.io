@@ -53,7 +53,7 @@ export default class extends Component {
           <p>I'm a designer & developer in high school from the Boston area who has a passion for human-computer interaction and automation. I develop small tools and larger projects in my free time.</p>
           </div>
           <div className="col-sm-6 col-xs-12">
-            <p>I also participate in my school's robotics team and run the Linguistics club there.</p>
+            <p>I also lead my school's robotics team and run the linguistics club there.</p>
             <p>You can view my resume <a href="resume.pdf">here</a>.</p>
           </div>
           </div>
@@ -140,8 +140,8 @@ export default class extends Component {
         </Modal>
         <Modal show={(this.state.show === 'MAHacks')} back={() => this.hideProject()} title="MAHacks">
             <div className="col-sm-6 col-xs-12">
-                <p>I developed the brand identity and website of a series of Massachusetts high school hackathons with over one hundred attendees.</p>
-                <p>The event was hosted at the MIT Stata Center.</p>
+                <p>I developed the brand identity, materials, and website of a series of Massachusetts high school hackathons with over one hundred attendees.</p>
+                <p>The events were hosted at the MIT Stata Center in Cambridge and Canopy City Coworking in Somerville.</p>
                   <div className="row center-xs">
                     <a href="http://mahacks.com">
                       <div className="visitButton" style={{backgroundColor: '#14ADC2'}}>
