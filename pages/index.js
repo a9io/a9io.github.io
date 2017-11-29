@@ -43,9 +43,10 @@ export default class extends Component {
 					<ProjectBox clicked={(item) => this.showProject(item)} title="alienbox" image="alienbox.png"/>
 				</Grid>
         <Grid title="Experience">
-          <ProjectBox clicked={(item) => this.showProject(item)} title="CabinetCloud" image="cabinet.png" />
+        <ProjectBox clicked={(item) => this.showProject(item)} title="Formlabs" image="formlabs.png" />
           <ProjectBox clicked={(item) => this.showProject(item)} title="MAHacks" image="mahacks.png" />
           <ProjectBox clicked={(item) => this.showProject(item)} title="MIT Racecar" image="racecar.png" />
+            <ProjectBox clicked={(item) => this.showProject(item)} title="CabinetCloud" image="cabinet.png" />
         </Grid>
         <Section title="About">
           <div className="row">
@@ -53,7 +54,7 @@ export default class extends Component {
           <p>I'm a designer & developer in high school from the Boston area who has a passion for human-computer interaction and automation. I develop small tools and larger projects in my free time.</p>
           </div>
           <div className="col-sm-6 col-xs-12">
-            <p>I also lead my school's robotics team and run the linguistics club there.</p>
+            <p>I also lead my school's robotics team and run the <a href="http://linguisticsclub.github.io">linguistics club</a> there.</p>
             <p>You can view my resume <a href="resume.pdf">here</a>.</p>
           </div>
           </div>
@@ -113,6 +114,18 @@ export default class extends Component {
               <div className="row center-xs">
                 <div>
                   <img width="100%" src="cabinet.png" />
+                </div>
+              </div>
+            </div>
+        </Modal>
+        <Modal show={(this.state.show === 'Formlabs')} back={() => this.hideProject()} title="Formlabs">
+            <div className="col-sm-6 col-xs-12">
+                <p>Over the Summer of 2017, I helped the <a href="https://formlabs.com">Formlabs</a> web team build internal and user-facing systems for the company's (awesome) 3D printers.</p>
+            </div>
+            <div className="col-sm-6 col-xs-12">
+              <div className="row center-xs">
+                <div>
+                  <img width="50%" src="magnitude.png" />
                 </div>
               </div>
             </div>
