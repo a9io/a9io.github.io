@@ -1470,13 +1470,16 @@ module.exports =
               { title: 'Experience' },
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'CabinetCloud', image: 'cabinet.png' }),
+                }, title: 'Formlabs', image: 'formlabs.png' }),
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
                 }, title: 'MAHacks', image: 'mahacks.png' }),
               _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'MIT Racecar', image: 'racecar.png' })
+                }, title: 'MIT Racecar', image: 'racecar.png' }),
+              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                  return _this.showProject(item);
+                }, title: 'CabinetCloud', image: 'cabinet.png' })
             ),
             _react2['default'].createElement(
               _componentsSection2['default'],
@@ -1499,7 +1502,13 @@ module.exports =
                   _react2['default'].createElement(
                     'p',
                     null,
-                    'I also lead my school\'s robotics team and run the linguistics club there.'
+                    'I also lead my school\'s robotics team and run the ',
+                    _react2['default'].createElement(
+                      'a',
+                      { href: 'http://linguisticsclub.github.io' },
+                      'linguistics club'
+                    ),
+                    ' there.'
                   ),
                   _react2['default'].createElement(
                     'p',
@@ -1672,6 +1681,40 @@ module.exports =
                   'div',
                   null,
                   _react2['default'].createElement('img', { width: '100%', src: 'cabinet.png' })
+                )
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            _componentsModal2['default'],
+            { show: this.state.show === 'Formlabs', back: function () {
+                return _this.hideProject();
+              }, title: 'Formlabs' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                'Over the Summer of 2017, I helped the ',
+                _react2['default'].createElement(
+                  'a',
+                  { href: 'https://formlabs.com' },
+                  'Formlabs'
+                ),
+                ' web team build internal and user-facing systems for the company\'s (awesome) 3D printers.'
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'col-sm-6 col-xs-12' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'row center-xs' },
+                _react2['default'].createElement(
+                  'div',
+                  null,
+                  _react2['default'].createElement('img', { width: '50%', src: 'magnitude.png' })
                 )
               )
             )
@@ -2008,7 +2051,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn:hover {\n\topacity: 1;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n\tpadding-right: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.2em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\ttext-decoration: none;\n\twidth: 150px;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.5em;\n\tborder-radius: 10px;\n}\n\n.Modal .content img {\n\tmargin-top: 1em;\n}\n.Modal.Show {\n\tdisplay: \"\";\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\t-webkit-animation: slidein 0.5s;\n\t     -o-animation: slidein 0.5s;\n\t        animation: slidein 0.5s;\n}\n.Modal.Hide {\n\tdisplay: none;\n}\n\n@-webkit-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@-o-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Modal {\n\tposition: absolute;\n\tz-index: 10;\n\tbackground-color: #FFFFFF;\n\tcolor: #171717;\n\tpadding-top: 2em;\n}\n\n.Modal h1 {\n\tfont-weight: 200;\n\tmargin-left: 5vw;\n\tmargin-bottom: 0;\n\tfont-size: 4.5em;\n}\n\n.Modal .MoxBoxSmall {\n\tborder: 1px solid #171717;\n\tpadding: 6px 18px;\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 1.8em;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .MoxBoxSmall:hover {\n\tbackground-color: #171717;\n\tcolor: #FFFFFF;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn {\n\tmargin-left: 3vw;\n\tfont-size: 2em;\n\tcolor: #171717;\n\topacity: 0.8;\n\tcursor: pointer;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .backBtn:hover {\n\topacity: 1;\n\t-webkit-transition: 0.3s;\n\t-o-transition: 0.3s;\n\ttransition: 0.3s;\n}\n\n.Modal .content {\n\tpadding-left: 3em;\n\tpadding-right: 3em;\n}\n\n.Modal .content p {\n\tfont-size: 1.2em;\n}\n\n.Modal .content .visitButton {\n\tpadding: 0.5em;\n\ttext-decoration: none;\n\twidth: 150px;\n\ttext-align: center;\n\tcolor: #FFFFFF;\n\tfont-size: 1.5em;\n\tborder-radius: 10px;\n}\n\n.Modal .content img {\n\tmargin-top: 1em;\n}\n\n.Modal p a {\n\ttext-decoration: underline;\n}\n.Modal.Show {\n\tdisplay: \"\";\n\ttop: 0;\n\tleft: 0;\n\tright: 0;\n\tbottom: 0;\n\t-webkit-animation: slidein 0.5s;\n\t     -o-animation: slidein 0.5s;\n\t        animation: slidein 0.5s;\n}\n.Modal.Hide {\n\tdisplay: none;\n}\n\n@-webkit-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@-o-keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n\n@keyframes slidein {\n\t0% {\n\t\ttop: 200%;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 200%;\n\t}\n\t100% {\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tright: 0;\n\t\tbottom: 0;\n\t}\n}\n", ""]);
 
   // exports
 
