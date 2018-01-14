@@ -51,7 +51,7 @@ export default class extends Component {
         <Section title="About">
           <div className="row">
           <div className="col-sm-6 col-xs-12">
-          <p>I'm a designer & developer in high school from the Boston area who has a passion for human-computer interaction and automation. I develop small tools and larger projects in my free time.</p>
+          <p>I'm a designer & developer in high school from the Boston area with an interest in human-computer interaction and automation. I develop small tools and larger projects in my free time.</p>
           </div>
           <div className="col-sm-6 col-xs-12">
             <p>I also lead my school's robotics team and run the <a href="http://linguisticsclub.github.io">linguistics club</a> there.</p>
