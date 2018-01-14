@@ -1493,7 +1493,7 @@ module.exports =
                   _react2['default'].createElement(
                     'p',
                     null,
-                    'I\'m a designer & developer in high school from the Boston area who has a passion for human-computer interaction and automation. I develop small tools and larger projects in my free time.'
+                    'I\'m a designer & developer in high school from the Boston area with an interest in human-computer interaction and automation. I develop small tools and larger projects in my free time.'
                   )
                 ),
                 _react2['default'].createElement(
