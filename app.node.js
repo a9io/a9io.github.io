@@ -954,11 +954,6 @@ module.exports =
           ),
           _react2['default'].createElement(
             'a',
-            { href: 'https://www.last.fm/user/a9_io' },
-            _react2['default'].createElement('i', { className: 'fa fa-lastfm' })
-          ),
-          _react2['default'].createElement(
-            'a',
             { href: 'https://github.com/maxkrieger' },
             _react2['default'].createElement('i', { className: 'fa fa-github' })
           ),
@@ -982,6 +977,7 @@ module.exports =
 
   exports['default'] = SocialMedia;
   module.exports = exports['default'];
+  /*<a href="https://www.last.fm/user/a9_io"><i className="fa fa-lastfm"></i></a>*/
 
 /***/ },
 /* 14 */
