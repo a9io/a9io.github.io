@@ -959,7 +959,7 @@ module.exports =
           ),
           _react2['default'].createElement(
             'a',
-            { href: 'https://www.google.com/recaptcha/mailhide/d?k=01OQgZinQEdZ8NZXVTw0niRQ==&c=aAHOFQgEVekfGiM4ENP0F1tGDqNTi4RZzNjnYcjE33U=' },
+            { href: 'mailto:themaxaxis+418@gmail.com' },
             _react2['default'].createElement('i', { className: 'fa fa-envelope' })
           )
         );
