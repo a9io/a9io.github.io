@@ -1442,7 +1442,7 @@ module.exports =
             _react2['default'].createElement(
               _componentsBigText2['default'],
               null,
-              'Designer, developer, student, cognitive architect.'
+              'Cognitive Architect. Student. Developer. Designer.'
             ),
             _react2['default'].createElement(_componentsSocialmedia2['default'], null),
             _react2['default'].createElement(
@@ -1971,7 +1971,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.BigText {\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 3.5em;\n\tpadding-top: 0.5em;\n\tpadding-left: 2vw;\n\tpadding-right: 2vw;\n  text-align: center;\n}\n\n@media (max-width: 500px) {\n  .BigText {\n    font-size: 2em;\n  }\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.BigText {\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 3em;\n\tpadding-top: 0.5em;\n\tpadding-left: 2vw;\n\tpadding-right: 2vw;\n  text-align: center;\n}\n\n@media (max-width: 500px) {\n  .BigText {\n    font-size: 2em;\n  }\n}\n", ""]);
 
   // exports
 
