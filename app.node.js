@@ -1442,7 +1442,7 @@ module.exports =
             _react2['default'].createElement(
               _componentsBigText2['default'],
               null,
-              'A designer & developer from Boston, currently in high school.'
+              'Designer, developer, student, cognitive architect.'
             ),
             _react2['default'].createElement(_componentsSocialmedia2['default'], null),
             _react2['default'].createElement(
@@ -1489,7 +1489,7 @@ module.exports =
                   _react2['default'].createElement(
                     'p',
                     null,
-                    'I\'m a designer & developer in high school from the Boston area with an interest in human-computer interaction and automation. I develop small tools and larger projects in my free time.'
+                    'I\'m a designer & developer from the Boston area studying at Carnegie Mellon. I\'m particularly interested in cognitive and dynamic media; tools that facilitate thought and creativity in new ways.'
                   )
                 ),
                 _react2['default'].createElement(
@@ -1498,13 +1498,7 @@ module.exports =
                   _react2['default'].createElement(
                     'p',
                     null,
-                    'I also lead my school\'s robotics team and run the ',
-                    _react2['default'].createElement(
-                      'a',
-                      { href: 'http://linguisticsclub.github.io' },
-                      'linguistics club'
-                    ),
-                    ' there.'
+                    'Some other interests of mine include programming language theory, artificial intelligence, and communication design.'
                   ),
                   _react2['default'].createElement(
                     'p',
@@ -1977,7 +1971,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.BigText {\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 3.5em;\n\tpadding-top: 0.5em;\n\tpadding-left: 2vw;\n\tpadding-right: 2vw;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.BigText {\n\tfont-weight: 100;\n\tfont-style: italic;\n\tfont-size: 3.5em;\n\tpadding-top: 0.5em;\n\tpadding-left: 2vw;\n\tpadding-right: 2vw;\n  text-align: center;\n}\n\n@media (max-width: 500px) {\n  .BigText {\n    font-size: 2em;\n  }\n}\n", ""]);
 
   // exports
 
