@@ -13,4 +13,11 @@
 	padding-top: 0.5em;
 	padding-left: 2vw;
 	padding-right: 2vw;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .BigText {
+    font-size: 2em;
+  }
 }

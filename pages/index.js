@@ -33,7 +33,7 @@ export default class extends Component {
         <div className="showing">
 				<Header />
 				<BigText>
-					A designer & developer from Boston, currently in high school.
+					Designer, developer, student, cognitive architect.
 				</BigText>
 				<SocialMedia />
 				<Grid title="Projects">
@@ -51,11 +51,10 @@ export default class extends Component {
         <Section title="About">
           <div className="row">
           <div className="col-sm-6 col-xs-12">
-          <p>I'm a designer & developer in high school from the Boston area with an interest in human-computer interaction and automation. I develop small tools and larger projects in my free time.</p>
+          <p>I'm a designer & developer from the Boston area studying at Carnegie Mellon. I'm particularly interested in cognitive and dynamic media; tools that facilitate thought and creativity in new ways.</p>
           </div>
           <div className="col-sm-6 col-xs-12">
-            <p>I also lead my school's robotics team and run the <a href="http://linguisticsclub.github.io">linguistics club</a> there.</p>
-            <p>You can view my resume <a href="resume.pdf">here</a>.</p>
+            <p>Some other interests of mine include programming language theory, artificial intelligence, and communication design.</p><p>You can view my resume <a href="resume.pdf">here</a>.</p>
           </div>
           </div>
         </Section>
