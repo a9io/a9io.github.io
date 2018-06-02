@@ -944,7 +944,7 @@ module.exports =
           { className: 'SocialMedia row center-xs end-sm' },
           _react2['default'].createElement(
             'a',
-            { href: 'https://twitter.com/a9_io' },
+            { href: 'https://twitter.com/maxkriegers' },
             _react2['default'].createElement('i', { className: 'fa fa-twitter' })
           ),
           _react2['default'].createElement(
