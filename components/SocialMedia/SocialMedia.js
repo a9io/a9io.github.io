@@ -16,7 +16,7 @@ class SocialMedia extends Component {
   render() {
     return (
       <div className="SocialMedia row center-xs end-sm">
-				<a href="https://twitter.com/a9_io"><i className="fa fa-twitter"></i></a>
+				<a href="https://twitter.com/maxkriegers"><i className="fa fa-twitter"></i></a>
 				<a href="https://www.linkedin.com/in/max-krieger"><i className="fa fa-linkedin"></i></a>
 				{/*<a href="https://www.last.fm/user/a9_io"><i className="fa fa-lastfm"></i></a>*/}
 				<a href="https://github.com/maxkrieger"><i className="fa fa-github"></i></a>
