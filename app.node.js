@@ -959,7 +959,7 @@ module.exports =
           ),
           _react2['default'].createElement(
             'a',
-            { href: 'mailto:themaxaxis+418@gmail.com' },
+            { href: 'mailto:maxkrieger+418@cmu.edu' },
             _react2['default'].createElement('i', { className: 'fa fa-envelope' })
           )
         );
