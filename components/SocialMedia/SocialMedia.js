@@ -20,7 +20,7 @@ class SocialMedia extends Component {
 				<a href="https://www.linkedin.com/in/max-krieger"><i className="fa fa-linkedin"></i></a>
 				{/*<a href="https://www.last.fm/user/a9_io"><i className="fa fa-lastfm"></i></a>*/}
 				<a href="https://github.com/maxkrieger"><i className="fa fa-github"></i></a>
-				<a href="mailto:themaxaxis+418@gmail.com"><i className="fa fa-envelope"></i></a>
+				<a href="mailto:maxkrieger+418@cmu.edu"><i className="fa fa-envelope"></i></a>
       </div>
     );
   }
