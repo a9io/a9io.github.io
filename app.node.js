@@ -1353,21 +1353,21 @@ module.exports =
    * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
    */
 
-  'use strict';
+  "use strict";
 
-  Object.defineProperty(exports, '__esModule', {
+  Object.defineProperty(exports, "__esModule", {
     value: true
   });
 
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
   var _react = __webpack_require__(1);
 
@@ -1411,543 +1411,598 @@ module.exports =
     function _default(props) {
       _classCallCheck(this, _default);
 
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).call(this, props);
+      _get(Object.getPrototypeOf(_default.prototype), "constructor", this).call(this, props);
       this.state = {
-        show: ''
+        show: ""
       };
     }
 
     _createClass(_default, [{
-      key: 'showProject',
+      key: "showProject",
       value: function showProject(project) {
         this.setState({ show: project });
       }
     }, {
-      key: 'hideProject',
+      key: "hideProject",
       value: function hideProject() {
-        this.setState({ show: '' });
+        this.setState({ show: "" });
       }
     }, {
-      key: 'render',
+      key: "render",
       value: function render() {
         var _this = this;
 
-        return _react2['default'].createElement(
-          'div',
-          { className: 'page' },
-          _react2['default'].createElement(
-            'div',
-            { className: 'showing' },
-            _react2['default'].createElement(_componentsHeader2['default'], null),
-            _react2['default'].createElement(
-              _componentsBigText2['default'],
+        return _react2["default"].createElement(
+          "div",
+          { className: "page" },
+          _react2["default"].createElement(
+            "div",
+            { className: "showing" },
+            _react2["default"].createElement(_componentsHeader2["default"], null),
+            _react2["default"].createElement(
+              _componentsBigText2["default"],
               null,
-              'Cognitive Architect. Student. Developer. Designer.'
+              "Cognitive Architect. Student. Developer. Designer."
             ),
-            _react2['default'].createElement(_componentsSocialmedia2['default'], null),
-            _react2['default'].createElement(
-              _componentsGrid2['default'],
-              { title: 'Projects' },
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+            _react2["default"].createElement(_componentsSocialmedia2["default"], null),
+            _react2["default"].createElement(
+              _componentsGrid2["default"],
+              { title: "Projects" },
+              _react2["default"].createElement(_componentsProjectBox2["default"], {
+                clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'LiquidTime', image: 'liquidtime.png' }),
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                },
+                title: "Semantic Calculator",
+                image: "semantic.png"
+              }),
+              _react2["default"].createElement(_componentsProjectBox2["default"], {
+                clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'Spotify Offline', image: 'spotify-offline.png' }),
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                },
+                title: "LiquidTime",
+                image: "liquidtime.png"
+              }),
+              _react2["default"].createElement(_componentsProjectBox2["default"], {
+                clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'A-Frame Components', image: 'aframe.png' }),
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                },
+                title: "Spotify Offline",
+                image: "spotify-offline.png"
+              }),
+              _react2["default"].createElement(_componentsProjectBox2["default"], {
+                clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'alienbox', image: 'alienbox.png' })
+                },
+                title: "A-Frame Components",
+                image: "aframe.png"
+              })
             ),
-            _react2['default'].createElement(
-              _componentsGrid2['default'],
-              { title: 'Experience' },
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+            _react2["default"].createElement(
+              _componentsGrid2["default"],
+              { title: "Experience" },
+              _react2["default"].createElement(_componentsProjectBox2["default"], {
+                clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'Formlabs', image: 'formlabs.png' }),
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                },
+                title: "Formlabs",
+                image: "formlabs.png"
+              }),
+              _react2["default"].createElement(_componentsProjectBox2["default"], {
+                clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'MAHacks', image: 'mahacks.png' }),
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
+                },
+                title: "MAHacks",
+                image: "mahacks.png"
+              }),
+              _react2["default"].createElement(_componentsProjectBox2["default"], {
+                clicked: function (item) {
                   return _this.showProject(item);
-                }, title: 'MIT Racecar', image: 'racecar.png' }),
-              _react2['default'].createElement(_componentsProjectBox2['default'], { clicked: function (item) {
-                  return _this.showProject(item);
-                }, title: 'CabinetCloud', image: 'cabinet.png' })
+                },
+                title: "MIT Racecar",
+                image: "racecar.png"
+              })
             ),
-            _react2['default'].createElement(
-              _componentsSection2['default'],
-              { title: 'About' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row' },
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'col-sm-6 col-xs-12' },
-                  _react2['default'].createElement(
-                    'p',
+            _react2["default"].createElement(
+              _componentsSection2["default"],
+              { title: "About" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row" },
+                _react2["default"].createElement(
+                  "div",
+                  { className: "col-sm-6 col-xs-12" },
+                  _react2["default"].createElement(
+                    "p",
                     null,
-                    'I\'m a designer & developer from the Boston area studying at Carnegie Mellon. I\'m particularly interested in cognitive and dynamic media; tools that facilitate thought and creativity in new ways.'
+                    "I'm a designer & developer from the Boston area studying at Carnegie Mellon. I'm particularly interested in cognitive and dynamic media; tools that facilitate thought and creativity in new ways."
                   )
                 ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'col-sm-6 col-xs-12' },
-                  _react2['default'].createElement(
-                    'p',
+                _react2["default"].createElement(
+                  "div",
+                  { className: "col-sm-6 col-xs-12" },
+                  _react2["default"].createElement(
+                    "p",
                     null,
-                    'Some other interests of mine include programming language theory, artificial intelligence, and communication design.'
+                    "Some other interests of mine include programming language theory, artificial intelligence, and communication design."
                   ),
-                  _react2['default'].createElement(
-                    'p',
+                  _react2["default"].createElement(
+                    "p",
                     null,
-                    'You can view my resume ',
-                    _react2['default'].createElement(
-                      'a',
-                      { href: 'resume.pdf' },
-                      'here'
+                    "You can view my resume ",
+                    _react2["default"].createElement(
+                      "a",
+                      { href: "resume.pdf" },
+                      "here"
                     ),
-                    '.'
+                    "."
                   )
                 )
               )
             ),
-            _react2['default'].createElement(_componentsFooter2['default'], null)
+            _react2["default"].createElement(_componentsFooter2["default"], null)
           ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'alienbox', back: function () {
+          _react2["default"].createElement(
+            _componentsModal2["default"],
+            {
+              show: this.state.show === "Semantic Calculator",
+              back: function () {
                 return _this.hideProject();
-              }, title: 'alienbox' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
+              },
+              title: "Semantic Calculator"
+            },
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "p",
                 null,
-                'alienbox is a menubar app for checking your reddit inbox.'
+                "I created a tool for exploring how word embeddings relate to each other through an interactive REPL interface. My process involved experiments with interfaces that facilitate understanding of machine learning models."
               ),
-              _react2['default'].createElement(
-                'p',
-                null,
-                'it was built from the ground up with Electron, VueJS, and the Reddit API.'
-              ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'a',
-                  { href: '/alienbox' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'visitButton', style: { backgroundColor: '#FF6600' } },
-                    'Check it out!'
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "a",
+                  { href: "https://semantic.a9.io" },
+                  _react2["default"].createElement(
+                    "div",
+                    {
+                      className: "visitButton",
+                      style: { backgroundColor: "#4A90E2" }
+                    },
+                    "Check it out!"
                   )
                 )
               )
             ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "div",
                   null,
-                  _react2['default'].createElement('img', { width: '100%', src: 'alienbox.png' })
+                  _react2["default"].createElement("img", { width: "50%", src: "semantic.png" })
                 )
               )
             )
           ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'LiquidTime', back: function () {
+          _react2["default"].createElement(
+            _componentsModal2["default"],
+            {
+              show: this.state.show === "LiquidTime",
+              back: function () {
                 return _this.hideProject();
-              }, title: 'LiquidTime' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
+              },
+              title: "LiquidTime"
+            },
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "p",
                 null,
-                'I developed and designed a time management and tracking app.'
+                "I developed and designed a time management and tracking app."
               ),
-              _react2['default'].createElement(
-                'p',
+              _react2["default"].createElement(
+                "p",
                 null,
-                'It has an emphasis on making every plan fit, with easy rescheduling and pomodoro-style timing.'
+                "It has an emphasis on making every plan fit, with easy rescheduling and pomodoro-style timing."
               ),
-              _react2['default'].createElement(
-                'p',
+              _react2["default"].createElement(
+                "p",
                 null,
-                'It reached the top of ',
-                _react2['default'].createElement(
-                  'a',
-                  { style: { textDecoration: 'underline' }, href: 'https://news.ycombinator.com' },
-                  'Hacker News'
+                "It reached the top of",
+                " ",
+                _react2["default"].createElement(
+                  "a",
+                  {
+                    style: { textDecoration: "underline" },
+                    href: "https://news.ycombinator.com"
+                  },
+                  "Hacker News"
                 ),
-                ' and ',
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'https://producthunt.com', style: { textDecoration: 'underline' } },
-                  'Product Hunt'
+                " ",
+                "and",
+                " ",
+                _react2["default"].createElement(
+                  "a",
+                  {
+                    href: "https://producthunt.com",
+                    style: { textDecoration: "underline" }
+                  },
+                  "Product Hunt"
                 ),
-                '. To date, ',
-                _react2['default'].createElement(
-                  'a',
-                  { style: { textDecoration: 'underline' }, href: 'https://liquidti.me/about' },
-                  'thousands of hours'
+                ". To date,",
+                " ",
+                _react2["default"].createElement(
+                  "a",
+                  {
+                    style: { textDecoration: "underline" },
+                    href: "https://liquidti.me/about"
+                  },
+                  "thousands of hours"
                 ),
-                ' of productivity have been logged by thousands of users.'
+                " ",
+                "of productivity have been logged by thousands of users."
               ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'https://liquidti.me' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'visitButton', style: { backgroundColor: '#5850ff' } },
-                    'Check it out!'
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "a",
+                  { href: "https://liquidti.me" },
+                  _react2["default"].createElement(
+                    "div",
+                    {
+                      className: "visitButton",
+                      style: { backgroundColor: "#5850ff" }
+                    },
+                    "Check it out!"
                   )
                 )
               )
             ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "div",
                   null,
-                  _react2['default'].createElement('img', { width: '100%', src: 'liquidtime.png' })
+                  _react2["default"].createElement("img", { width: "100%", src: "liquidtime.png" })
                 ),
-                _react2['default'].createElement('iframe', { style: { border: 'none' }, src: 'https://cards.producthunt.com/cards/posts/80262?v=1', width: '100%', height: '405', frameBorder: '0', scrolling: 'no', allowFullScreen: true })
+                _react2["default"].createElement("iframe", {
+                  style: { border: "none" },
+                  src: "https://cards.producthunt.com/cards/posts/80262?v=1",
+                  width: "100%",
+                  height: "405",
+                  frameBorder: "0",
+                  scrolling: "no",
+                  allowFullScreen: true
+                })
               )
             )
           ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'CabinetCloud', back: function () {
+          _react2["default"].createElement(
+            _componentsModal2["default"],
+            {
+              show: this.state.show === "Formlabs",
+              back: function () {
                 return _this.hideProject();
-              }, title: 'CabinetCloud' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
+              },
+              title: "Formlabs"
+            },
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "p",
                 null,
-                'I remotely interned at a local Boston-based startup called CabinetCloud with a team of 5 to develop a CRM product for local governments. The product would leverage smart government for local municipalities, aiding in their communication, organization, and analyzing with constituents. It received a microgrant from the Santander Urban Impact program, and had the endorsement of multiple local legislators.'
-              ),
-              _react2['default'].createElement(
-                'p',
-                null,
-                'My main work was to design user workflows and layouts for the web-based product. I kept the users, mainly local legislators in mind with my designs. A few months in, I was tasked with developing a full mobile implementation of the product.'
-              ),
-              _react2['default'].createElement(
-                'p',
-                null,
-                'To accomplish the mobile implementation, I sought for new technologies which would allow me to rapidly work on a cross-platform app solo. I came across a relatively new technology, called React Native, which allowed me to make UI elements composable and reusable, keeping design patterns consistent and understandable.'
-              ),
-              _react2['default'].createElement(
-                'p',
-                null,
-                'Unfortunately, the product\'s development is currently on-hold, but images of my work are available.'
-              )
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
-                  null,
-                  _react2['default'].createElement('img', { width: '100%', src: 'cabinet.png' })
-                )
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'Formlabs', back: function () {
-                return _this.hideProject();
-              }, title: 'Formlabs' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
-                null,
-                'Over the Summer of 2017, I helped the ',
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'https://formlabs.com' },
-                  'Formlabs'
+                "Over the Summer of 2017, I helped the",
+                " ",
+                _react2["default"].createElement(
+                  "a",
+                  { href: "https://formlabs.com" },
+                  "Formlabs"
                 ),
-                ' web team build internal and user-facing systems for the company\'s (awesome) 3D printers.'
+                " web team build internal and user-facing systems for the company's (awesome) 3D printers."
               )
             ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "div",
                   null,
-                  _react2['default'].createElement('img', { width: '50%', src: 'magnitude.png' })
+                  _react2["default"].createElement("img", { width: "50%", src: "magnitude.png" })
                 )
               )
             )
           ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'A-Frame Components', back: function () {
+          _react2["default"].createElement(
+            _componentsModal2["default"],
+            {
+              show: this.state.show === "A-Frame Components",
+              back: function () {
                 return _this.hideProject();
-              }, title: 'A-Frame Components' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
+              },
+              title: "A-Frame Components"
+            },
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "p",
                 null,
-                'I developed several open source components for Mozilla\'s ',
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'https://aframe.io' },
-                  'A-Frame'
+                "I developed several open source components for Mozilla's",
+                " ",
+                _react2["default"].createElement(
+                  "a",
+                  { href: "https://aframe.io" },
+                  "A-Frame"
                 ),
-                ' VR platform, a framework which aims to make WebVR development more accessible.'
+                " VR platform, a framework which aims to make WebVR development more accessible."
               ),
-              _react2['default'].createElement(
-                'p',
+              _react2["default"].createElement(
+                "p",
                 null,
-                'They focus on implementation of the HTML5 canvas API on a flat VR surface, opening potential for 2d interfaces, text, images, and graphics within a virtual world.'
+                "They focus on implementation of the HTML5 canvas API on a flat VR surface, opening potential for 2d interfaces, text, images, and graphics within a virtual world."
               ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'https://github.com/maxkrieger/aframe-draw-component' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'visitButton', style: { backgroundColor: '#ef2d5e' } },
-                    'Check it out!'
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "a",
+                  { href: "https://github.com/maxkrieger/aframe-draw-component" },
+                  _react2["default"].createElement(
+                    "div",
+                    {
+                      className: "visitButton",
+                      style: { backgroundColor: "#ef2d5e" }
+                    },
+                    "Check it out!"
                   )
                 )
               )
             ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "div",
                   null,
-                  _react2['default'].createElement('img', { width: '100%', src: 'aframe-text.png' }),
-                  _react2['default'].createElement(
-                    'a',
-                    { href: 'https://aframe.io/blog/aframe-v0.2.0/' },
-                    _react2['default'].createElement('img', { width: '100%', src: 'aframe-post.png' })
+                  _react2["default"].createElement("img", { width: "100%", src: "aframe-text.png" }),
+                  _react2["default"].createElement(
+                    "a",
+                    { href: "https://aframe.io/blog/aframe-v0.2.0/" },
+                    _react2["default"].createElement("img", { width: "100%", src: "aframe-post.png" })
                   )
                 )
               )
             )
           ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'MAHacks', back: function () {
+          _react2["default"].createElement(
+            _componentsModal2["default"],
+            {
+              show: this.state.show === "MAHacks",
+              back: function () {
                 return _this.hideProject();
-              }, title: 'MAHacks' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
+              },
+              title: "MAHacks"
+            },
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "p",
                 null,
-                'I developed the brand identity, materials, and website of a series of Massachusetts high school hackathons with over one hundred attendees.'
+                "I developed the brand identity, materials, and website of a series of Massachusetts high school hackathons with over one hundred attendees."
               ),
-              _react2['default'].createElement(
-                'p',
+              _react2["default"].createElement(
+                "p",
                 null,
-                'The events were hosted at the MIT Stata Center in Cambridge and Canopy City Coworking in Somerville.'
+                "The events were hosted at the MIT Stata Center in Cambridge and Canopy City Coworking in Somerville."
               ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'http://mahacks.com' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'visitButton', style: { backgroundColor: '#14ADC2' } },
-                    'Check it out!'
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "a",
+                  { href: "http://mahacks.com" },
+                  _react2["default"].createElement(
+                    "div",
+                    {
+                      className: "visitButton",
+                      style: { backgroundColor: "#14ADC2" }
+                    },
+                    "Check it out!"
                   )
                 )
               )
             ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "div",
                   null,
-                  _react2['default'].createElement('img', { width: '100%', src: 'mahacks.png' }),
-                  _react2['default'].createElement('img', { width: '100%', src: 'mascreen.png' })
+                  _react2["default"].createElement("img", { width: "100%", src: "mahacks.png" }),
+                  _react2["default"].createElement("img", { width: "100%", src: "mascreen.png" })
                 )
               )
             )
           ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'MIT Racecar', back: function () {
+          _react2["default"].createElement(
+            _componentsModal2["default"],
+            {
+              show: this.state.show === "MIT Racecar",
+              back: function () {
                 return _this.hideProject();
-              }, title: 'MIT Beaverworks Racecar' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
+              },
+              title: "MIT Beaverworks Racecar"
+            },
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "p",
                 null,
-                'In the summer of 2016, I participated in MIT/Lincoln Laboratories\' first institute for high schoolers. We were tasked with an engineering project - automating a remote control car with multiple sensors and an Nvidia Jetson GPU.'
+                "In the summer of 2016, I participated in MIT/Lincoln Laboratories' first institute for high schoolers. We were tasked with an engineering project - automating a remote control car with multiple sensors and an Nvidia Jetson GPU."
               ),
-              _react2['default'].createElement(
-                'p',
+              _react2["default"].createElement(
+                "p",
                 null,
-                'I had the privilege of seeing countless lecturers visit to talk about working in the field of mobile robotics and automation. In addition, MIT professors and colleagues of Lincoln Laboratories conducted seminars on developing control systems, localization, and computer vision for mobile robots'
+                "I had the privilege of seeing countless lecturers visit to talk about working in the field of mobile robotics and automation. In addition, MIT professors and colleagues of Lincoln Laboratories conducted seminars on developing control systems, localization, and computer vision for mobile robots"
               ),
-              _react2['default'].createElement(
-                'p',
+              _react2["default"].createElement(
+                "p",
                 null,
-                'I collaborated with ',
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'http://august.codes/' },
-                  'August Trollbäck'
+                "I collaborated with",
+                " ",
+                _react2["default"].createElement(
+                  "a",
+                  { href: "http://august.codes/" },
+                  "August Trollbäck"
                 ),
-                ' on writing a report following the program.'
+                " on writing a report following the program."
               ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'http://a9.io/bwsi-report/' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'visitButton', style: { backgroundColor: '#0351B9' } },
-                    'View Report'
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "a",
+                  { href: "http://a9.io/bwsi-report/" },
+                  _react2["default"].createElement(
+                    "div",
+                    {
+                      className: "visitButton",
+                      style: { backgroundColor: "#0351B9" }
+                    },
+                    "View Report"
                   )
                 )
               )
             ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "div",
                   null,
-                  _react2['default'].createElement('img', { width: '100%', src: 'racecar.png' })
+                  _react2["default"].createElement("img", { width: "100%", src: "racecar.png" })
                 )
               )
             )
           ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'Tabmaster', back: function () {
+          _react2["default"].createElement(
+            _componentsModal2["default"],
+            {
+              show: this.state.show === "Tabmaster",
+              back: function () {
                 return _this.hideProject();
-              }, title: 'Tabmaster' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
+              },
+              title: "Tabmaster"
+            },
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "p",
                 null,
-                'Tabmaster is a chrome extension allowing for easier management of stray tabs.'
+                "Tabmaster is a chrome extension allowing for easier management of stray tabs."
               ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'visitButton', style: { backgroundColor: '#03B941' } },
-                    'Check it out!'
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "a",
+                  { href: "https://chrome.google.com/webstore/detail/tabmaster/pojgemmobcnjmnpodjmgeofdgojpkepn" },
+                  _react2["default"].createElement(
+                    "div",
+                    {
+                      className: "visitButton",
+                      style: { backgroundColor: "#03B941" }
+                    },
+                    "Check it out!"
                   )
                 )
               )
             ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "div",
                   null,
-                  _react2['default'].createElement('img', { width: '100%', src: 'tabmaster.png' })
+                  _react2["default"].createElement("img", { width: "100%", src: "tabmaster.png" })
                 )
               )
             )
           ),
-          _react2['default'].createElement(
-            _componentsModal2['default'],
-            { show: this.state.show === 'Spotify Offline', back: function () {
+          _react2["default"].createElement(
+            _componentsModal2["default"],
+            {
+              show: this.state.show === "Spotify Offline",
+              back: function () {
                 return _this.hideProject();
-              }, title: 'Spotify Offline' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'p',
+              },
+              title: "Spotify Offline"
+            },
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "p",
                 null,
-                'I explored how one can better manage their disk space with their Spotify offline music. What resulted was a concept that expanded upon Spotify\'s existing style.'
+                "I explored how one can better manage their disk space with their Spotify offline music. What resulted was a concept that expanded upon Spotify's existing style."
               ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'a',
-                  { href: 'https://www.behance.net/gallery/40743493/Spotify-Offline-Concept-Experience' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'visitButton', style: { backgroundColor: '#1ED760' } },
-                    'Check it out!'
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "a",
+                  { href: "https://www.behance.net/gallery/40743493/Spotify-Offline-Concept-Experience" },
+                  _react2["default"].createElement(
+                    "div",
+                    {
+                      className: "visitButton",
+                      style: { backgroundColor: "#1ED760" }
+                    },
+                    "Check it out!"
                   )
                 )
               )
             ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-6 col-xs-12' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row center-xs' },
-                _react2['default'].createElement(
-                  'div',
+            _react2["default"].createElement(
+              "div",
+              { className: "col-sm-6 col-xs-12" },
+              _react2["default"].createElement(
+                "div",
+                { className: "row center-xs" },
+                _react2["default"].createElement(
+                  "div",
                   null,
-                  _react2['default'].createElement('img', { width: '100%', src: 'spotify-offline.png' })
+                  _react2["default"].createElement("img", { width: "100%", src: "spotify-offline.png" })
                 )
               )
             )
@@ -1959,8 +2014,8 @@ module.exports =
     return _default;
   })(_react.Component);
 
-  exports['default'] = _default;
-  module.exports = exports['default'];
+  exports["default"] = _default;
+  module.exports = exports["default"];
 
 /***/ },
 /* 21 */
