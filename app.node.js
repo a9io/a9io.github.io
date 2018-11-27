@@ -1442,7 +1442,7 @@ module.exports =
             _react2["default"].createElement(
               _componentsBigText2["default"],
               null,
-              "Cognitive Architect. Student. Developer. Designer."
+              "Student, Cognitive Architect."
             ),
             _react2["default"].createElement(_componentsSocialmedia2["default"], null),
             _react2["default"].createElement(
