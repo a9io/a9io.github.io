@@ -32,7 +32,7 @@ export default class extends Component {
       <div className="page">
         <div className="showing">
           <Header />
-          <BigText>Cognitive Architect. Student. Developer. Designer.</BigText>
+          <BigText>Student, Cognitive Architect.</BigText>
           <SocialMedia />
           <Grid title="Projects">
             <ProjectBox
