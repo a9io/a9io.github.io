@@ -22,7 +22,7 @@ class Modal extends Component {
         <div className="row between-xs">
           <div className="">
           <div className="backBtn" onClick={this.props.back}>
-            <i className="fa fa-chevron-circle-left"></i>
+            <i className="fas fa-chevron-circle-left"></i>
           </div>
           </div>
           <div className="">
